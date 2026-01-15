@@ -16,6 +16,18 @@ const product = products.find((p) => p.slug === slug);
 if (!product) {
   console.warn(`Product not found: ${slug}`);
 }
+
+// Generate Amazon search URL if affiliate URL is a placeholder
+function getAffiliateUrl(url: string, productName: string): string {
+  if (url.startsWith('{{') || !url.startsWith('http')) {
+    // Generate Amazon search URL
+    const searchQuery = encodeURIComponent(productName);
+    return `https://www.amazon.com/s?k=${searchQuery}&tag=zt1prep-20`;
+  }
+  return url;
+}
+
+const affiliateUrl = product ? getAffiliateUrl(product.affiliateUrl, product.name) : '#';
 ---
 
 {product && variant === 'default' && (
@@ -84,7 +96,7 @@ if (!product) {
 
       {/* CTA */}
       <a
-        href={product.affiliateUrl}
+        href={affiliateUrl}
         target="_blank"
         rel="noopener noreferrer sponsored"
         class="block w-full text-center bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
@@ -102,7 +114,7 @@ if (!product) {
       <p class="text-sm text-stone-500 line-clamp-1">{product.description}</p>
     </div>
     <a
-      href={product.affiliateUrl}
+      href={affiliateUrl}
       target="_blank"
       rel="noopener noreferrer sponsored"
       class="flex-shrink-0 bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
@@ -161,7 +173,7 @@ if (!product) {
     )}
 
     <a
-      href={product.affiliateUrl}
+      href={affiliateUrl}
       target="_blank"
       rel="noopener noreferrer sponsored"
       class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"

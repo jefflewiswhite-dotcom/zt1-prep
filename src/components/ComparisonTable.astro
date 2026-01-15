@@ -29,8 +29,20 @@ const {
 
 import products from '@/data/products.json';
 
+// Generate Amazon search URL if affiliate URL is a placeholder
+function getAffiliateUrl(url: string, productName: string): string {
+  if (url.startsWith('{{') || !url.startsWith('http')) {
+    const searchQuery = encodeURIComponent(productName);
+    return `https://www.amazon.com/s?k=${searchQuery}&tag=zt1prep-20`;
+  }
+  return url;
+}
+
 const productA = optionASlug ? products.find((p) => p.slug === optionASlug) : null;
 const productB = optionBSlug ? products.find((p) => p.slug === optionBSlug) : null;
+
+const affiliateUrlA = productA ? getAffiliateUrl(productA.affiliateUrl, productA.name) : '#';
+const affiliateUrlB = productB ? getAffiliateUrl(productB.affiliateUrl, productB.name) : '#';
 ---
 
 <div class="overflow-x-auto">
@@ -87,7 +99,7 @@ const productB = optionBSlug ? products.find((p) => p.slug === optionBSlug) : nu
           <td class="p-4 text-center">
             {productA ? (
               <a
-                href={productA.affiliateUrl}
+                href={affiliateUrlA}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
@@ -101,7 +113,7 @@ const productB = optionBSlug ? products.find((p) => p.slug === optionBSlug) : nu
           <td class="p-4 text-center">
             {productB ? (
               <a
-                href={productB.affiliateUrl}
+                href={affiliateUrlB}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
