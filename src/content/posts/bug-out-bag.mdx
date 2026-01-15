@@ -9,7 +9,7 @@ hub: "bug-out-bag"
 contentType: "pillar"
 featured: true
 hasAffiliateLinks: true
-products: ["sawyer-squeeze", "sol-emergency-bivvy", "streamlight-protac", "leatherman-wave-plus", "surviveware-large-first-aid", "datrex-emergency-food-bars", "midland-er310"]
+products: ["sawyer-squeeze", "sol-emergency-bivvy", "streamlight-protac", "leatherman-wave-plus", "surviveware-large-first-aid", "datrex-emergency-food-bars", "midland-er310", "anker-powercore-10000", "exotac-firesleeve", "morakniv-companion", "waterproof-document-holder", "waterproof-playing-cards", "emergency-whistle", "work-gloves-mechanix", "shemagh-tactical-scarf"]
 ---
 
 import Callout from '@/components/Callout.astro';
@@ -94,6 +94,8 @@ Fire provides warmth, water purification, cooking, signaling, and morale.
 - Optional: Compact stove for cooking
 
 **Tip:** Pack 3 ways to make fire. Lighters fail, matches get wet, ferro rods need practice—redundancy matters.
+
+<ProductCard slug="exotac-firesleeve" />
 
 [Best Fire Starters for Bug Out Bags →](/gear/best-fire-starters-bug-out-bag)
 
@@ -180,7 +182,9 @@ Information and the ability to reach others can be critical.
 
 <ProductCard slug="midland-er310" />
 
-[Best Emergency Radios →](/gear/best-emergency-radios)
+<ProductCard slug="anker-powercore-10000" />
+
+[Best Emergency Radios →](/gear/best-emergency-radios-bug-out-bag) | [Best Power Banks →](/gear/best-power-banks-bug-out-bag)
 
 ### 10. Documents & Personal
 
@@ -199,26 +203,26 @@ Important documents and personal items round out your kit.
   title="Bug Out Bag Essentials"
   items={[
     { item: "Water bottles (1-2 liters)", priority: "essential" },
-    { item: "Water filter", priority: "essential" },
-    { item: "Purification tablets", priority: "recommended" },
-    { item: "Emergency bivvy or sleeping bag", priority: "essential" },
+    { item: "Water filter", priority: "essential", productSlug: "sawyer-squeeze" },
+    { item: "Purification tablets", priority: "recommended", productSlug: "aquatabs" },
+    { item: "Emergency bivvy or sleeping bag", priority: "essential", productSlug: "sol-emergency-bivvy" },
     { item: "Tarp or emergency shelter", priority: "recommended" },
     { item: "Paracord (50 ft)", priority: "recommended" },
-    { item: "Lighter in waterproof case", priority: "essential" },
-    { item: "Ferro rod (backup)", priority: "recommended" },
-    { item: "Fire tinder", priority: "recommended" },
-    { item: "Flashlight", priority: "essential" },
-    { item: "Headlamp", priority: "recommended" },
+    { item: "Lighter in waterproof case", priority: "essential", productSlug: "exotac-firesleeve" },
+    { item: "Ferro rod (backup)", priority: "recommended", productSlug: "light-my-fire-ferro-rod" },
+    { item: "Fire tinder", priority: "recommended", href: "/gear/best-fire-starters-bug-out-bag" },
+    { item: "Flashlight", priority: "essential", productSlug: "streamlight-protac" },
+    { item: "Headlamp", priority: "recommended", productSlug: "petzl-actik-core" },
     { item: "Extra batteries", priority: "essential" },
-    { item: "First aid kit", priority: "essential" },
+    { item: "First aid kit", priority: "essential", productSlug: "surviveware-large-first-aid" },
     { item: "Personal medications", priority: "essential" },
-    { item: "Knife or multitool", priority: "essential" },
+    { item: "Knife or multitool", priority: "essential", productSlug: "leatherman-wave-plus" },
     { item: "Duct tape", priority: "recommended" },
-    { item: "Emergency food (2,400+ calories)", priority: "essential" },
+    { item: "Emergency food (2,400+ calories)", priority: "essential", productSlug: "datrex-emergency-food-bars" },
     { item: "Regional maps", priority: "recommended" },
     { item: "Compass", priority: "optional" },
-    { item: "Emergency radio", priority: "recommended" },
-    { item: "Power bank", priority: "essential" },
+    { item: "Emergency radio", priority: "recommended", productSlug: "midland-er310" },
+    { item: "Power bank", priority: "essential", productSlug: "anker-powercore-10000" },
     { item: "Phone charger", priority: "essential" },
     { item: "Document copies (waterproofed)", priority: "essential" },
     { item: "Cash ($100+ in small bills)", priority: "essential" },
@@ -227,6 +231,87 @@ Important documents and personal items round out your kit.
   ]}
   printable={true}
 />
+
+## Optional & Recommended Additions
+
+Beyond the essentials, experienced preppers and organizations like [FEMA](https://www.ready.gov/kit) and the [Red Cross](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html) recommend additional items based on your situation.
+
+### Tools & Safety
+
+<Checklist
+  title="Additional Tools"
+  items={[
+    { item: "Fixed blade knife", priority: "recommended", productSlug: "morakniv-companion", note: "More capable than multitool for heavy cutting tasks" },
+    { item: "Work gloves", priority: "recommended", productSlug: "work-gloves-mechanix", note: "Protect hands from glass, debris, thorns" },
+    { item: "Emergency whistle", priority: "recommended", productSlug: "emergency-whistle", note: "Signaling device audible for miles" },
+    { item: "N95 masks (2-3)", priority: "optional", note: "Dust, smoke, and debris protection" },
+    { item: "Safety glasses", priority: "optional", note: "Eye protection for debris" },
+    { item: "Bandana or shemagh", priority: "optional", productSlug: "shemagh-tactical-scarf", note: "Dozens of uses: sun protection, dust mask, sling, water filter" }
+  ]}
+/>
+
+<ProductCard slug="morakniv-companion" />
+
+### Documents & Personal Items
+
+According to [FEMA](https://www.fema.gov/node/what-should-i-bring-me-when-i-evacuate-my-home-or-during-disaster), you should have copies of critical documents ready to grab.
+
+<Checklist
+  title="Documents & Personal"
+  items={[
+    { item: "Waterproof document bag", priority: "essential", productSlug: "waterproof-document-holder" },
+    { item: "Copies of IDs (driver's license, passport)", priority: "essential" },
+    { item: "Insurance documents (home, auto, health)", priority: "essential" },
+    { item: "Birth certificates", priority: "recommended" },
+    { item: "Medical records & prescription list", priority: "essential" },
+    { item: "Emergency contact list (written)", priority: "essential" },
+    { item: "Cash ($200+ in small bills)", priority: "essential", note: "ATMs may not work; small bills for exact change" },
+    { item: "Photos of family members", priority: "recommended", note: "For identification if separated" },
+    { item: "USB drive with digital copies", priority: "optional", note: "Encrypted backup of all documents" }
+  ]}
+/>
+
+<ProductCard slug="waterproof-document-holder" />
+
+### Comfort & Morale Items
+
+Don't underestimate morale. [Survival experts](https://bugoutbagacademy.com/free-bug-out-bag-list/) consistently recommend packing a few comfort items—being mentally resilient matters as much as physical supplies.
+
+<Checklist
+  title="Comfort & Morale"
+  items={[
+    { item: "Deck of cards (waterproof)", priority: "recommended", productSlug: "waterproof-playing-cards", note: "Entertainment, stress relief, pass time" },
+    { item: "Small notebook and pen", priority: "recommended", note: "Notes, messages, journaling" },
+    { item: "Comfort food (chocolate, hard candy)", priority: "optional", note: "Psychological boost in tough times" },
+    { item: "Coffee or tea bags", priority: "optional", note: "Warm drink improves morale significantly" },
+    { item: "Family photos", priority: "optional", note: "Reminder of normal life" },
+    { item: "Small book or e-reader", priority: "optional", note: "Mental escape during downtime" }
+  ]}
+/>
+
+### Family & Children's Items
+
+If you have children, [Mountain House](https://mountainhouse.com/blogs/emergency-prep-survival/kids-bug-out-bag) and [TruePrepper](https://trueprepper.com/kids-bug-out-bag/) recommend packing kid-specific items. Children need comfort even more than adults during emergencies.
+
+<Checklist
+  title="For Families with Children"
+  items={[
+    { item: "Small toy or stuffed animal", priority: "recommended", note: "Comfort item—don't skip this" },
+    { item: "Coloring book and crayons", priority: "recommended", note: "Keeps kids occupied during waiting" },
+    { item: "UNO or small card game", priority: "optional", note: "Family activity, stress relief" },
+    { item: "Glow sticks", priority: "optional", note: "Light, marking, entertainment" },
+    { item: "Familiar snacks", priority: "recommended", note: "Comfort food they'll actually eat" },
+    { item: "Diapers and wipes (if applicable)", priority: "essential" },
+    { item: "Formula and bottles (if applicable)", priority: "essential" },
+    { item: "Laminated emergency contact card", priority: "essential", note: "With photos and phone numbers if separated" },
+    { item: "Kid-sized rain poncho", priority: "recommended" },
+    { item: "Extra clothes (weather appropriate)", priority: "essential", note: "Kids outgrow clothes—check sizing every 6 months" }
+  ]}
+/>
+
+<Callout type="tip">
+Involve your kids in building their own bag (age-appropriate). It helps them understand preparedness and reduces fear during actual emergencies.
+</Callout>
 
 ## Weight Guidelines
 
@@ -349,3 +434,15 @@ Your bag itself matters. Look for:
 - [72-Hour Kit for Families](/guides/72-hour-kit)
 - [Best Water Filters for Bug Out Bags](/gear/best-water-filters-bug-out-bag)
 - [Emergency Bivvy vs. Sleeping Bag](/comparisons/emergency-bivvy-vs-sleeping-bag)
+
+---
+
+## Sources
+
+This guide was informed by the following authoritative sources:
+
+- [Ready.gov - Build A Kit](https://www.ready.gov/kit) — Official FEMA emergency preparedness guidelines
+- [American Red Cross - Survival Kit Supplies](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html) — Red Cross emergency kit recommendations
+- [TruePrepper - Bug Out Bag List](https://trueprepper.com/kits/bug-out-bag-list/) — Comprehensive 137-point checklist from experienced preppers
+- [Mountain House - Kids Bug Out Bag](https://mountainhouse.com/blogs/emergency-prep-survival/kids-bug-out-bag) — Family and children's preparedness guidance
+- [Bug Out Bag Academy](https://bugoutbagacademy.com/free-bug-out-bag-list/) — Community-tested gear recommendations and morale item suggestions

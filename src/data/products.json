@@ -479,5 +479,175 @@
       "Heavy when full (56 lbs)"
     ],
     "verifyOnListing": "Blue tint helps prevent algae growth"
+  },
+  {
+    "slug": "waterproof-document-holder",
+    "name": "ARAE Waterproof Document Bag",
+    "category": "document-protection",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:waterproof-document-bag}}",
+    "description": "Fireproof and waterproof bag for important documents. Protects passports, birth certificates, and insurance papers.",
+    "bestFor": ["Bug Out Bag", "Document Storage", "Emergency Kit"],
+    "pros": [
+      "Fireproof to 2000°F",
+      "Waterproof zipper seal",
+      "Fits letter-size documents",
+      "Multiple pockets",
+      "Affordable"
+    ],
+    "cons": [
+      "Not rated for submersion",
+      "Can be bulky when full",
+      "Zipper may wear over time"
+    ],
+    "verifyOnListing": "Check size - multiple sizes available"
+  },
+  {
+    "slug": "waterproof-playing-cards",
+    "name": "Hoyle Waterproof Playing Cards",
+    "category": "morale-items",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:waterproof-playing-cards}}",
+    "description": "100% plastic waterproof playing cards. Won't bend, tear, or get soggy in wet conditions.",
+    "bestFor": ["Bug Out Bag", "Camping", "Morale"],
+    "pros": [
+      "Completely waterproof",
+      "Won't bend or crease",
+      "Easy to clean",
+      "Standard size",
+      "Durable plastic case"
+    ],
+    "cons": [
+      "Slightly slippery",
+      "Heavier than paper cards",
+      "Can stick together when wet"
+    ],
+    "verifyOnListing": "Clear plastic is fully waterproof"
+  },
+  {
+    "slug": "emergency-whistle",
+    "name": "HyperWhistle Emergency Whistle",
+    "category": "signaling",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:hyperwhistle}}",
+    "description": "Extremely loud emergency whistle audible up to 2 miles. Essential signaling device.",
+    "bestFor": ["Bug Out Bag", "Hiking", "Signaling"],
+    "pros": [
+      "142 decibels",
+      "Heard up to 2 miles",
+      "Works when wet",
+      "Pealess design won't jam",
+      "Includes lanyard"
+    ],
+    "cons": [
+      "Larger than basic whistles",
+      "Requires practice for max volume",
+      "Bright orange only"
+    ],
+    "verifyOnListing": "Pealess design is critical for reliability"
+  },
+  {
+    "slug": "work-gloves-mechanix",
+    "name": "Mechanix Wear Original Gloves",
+    "category": "protection",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:mechanix-original}}",
+    "description": "Durable work gloves that protect hands while maintaining dexterity.",
+    "bestFor": ["Bug Out Bag", "Work", "Hand Protection"],
+    "pros": [
+      "Excellent dexterity",
+      "Durable construction",
+      "Machine washable",
+      "Good grip",
+      "Multiple sizes"
+    ],
+    "cons": [
+      "Not waterproof",
+      "Not insulated",
+      "Palm can wear over time"
+    ],
+    "verifyOnListing": "Size chart important - order correct size"
+  },
+  {
+    "slug": "shemagh-tactical-scarf",
+    "name": "Tactical Shemagh Scarf",
+    "category": "clothing",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:shemagh-scarf}}",
+    "description": "Versatile cotton scarf with dozens of survival uses. Sun protection, dust mask, bandage, and more.",
+    "bestFor": ["Bug Out Bag", "Multi-Use", "Sun Protection"],
+    "pros": [
+      "Dozens of uses",
+      "Lightweight",
+      "Breathable cotton",
+      "Sun and dust protection",
+      "Can filter sediment from water"
+    ],
+    "cons": [
+      "Takes time to learn wraps",
+      "Not waterproof",
+      "Can be bulky"
+    ],
+    "verifyOnListing": "100% cotton is most versatile"
+  },
+  {
+    "slug": "baofeng-uv5r",
+    "name": "Baofeng UV-5R Dual Band Ham Radio",
+    "category": "ham-radio",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:baofeng-uv5r}}",
+    "description": "Entry-level dual-band handheld ham radio. Incredibly affordable way to get started with amateur radio.",
+    "bestFor": ["Beginners", "Budget", "Learning"],
+    "pros": [
+      "Extremely affordable (<$30)",
+      "Dual-band VHF/UHF",
+      "Large aftermarket support",
+      "FM radio receiver built-in",
+      "Programmable with CHIRP software"
+    ],
+    "cons": [
+      "Confusing to program manually",
+      "Basic build quality",
+      "Inferior audio to premium brands",
+      "Can have spurious emissions"
+    ],
+    "verifyOnListing": "Get the UV-5R or BF-F8HP (upgraded version) - avoid clones"
+  },
+  {
+    "slug": "yaesu-ft65r",
+    "name": "Yaesu FT-65R Dual Band Handheld",
+    "category": "ham-radio",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:yaesu-ft65r}}",
+    "description": "Rugged, reliable dual-band handheld from a trusted manufacturer. Great balance of price and quality.",
+    "bestFor": ["Emergency Comms", "Reliability", "Daily Use"],
+    "pros": [
+      "IPX5 water resistant",
+      "Excellent audio quality",
+      "Simple programming",
+      "5W output power",
+      "Strong manufacturer support"
+    ],
+    "cons": [
+      "More expensive than budget radios",
+      "No digital modes",
+      "Fewer accessories than Baofeng"
+    ],
+    "verifyOnListing": "FT-65R is current model - FT-60R is older but also excellent"
+  },
+  {
+    "slug": "yaesu-ft60r",
+    "name": "Yaesu FT-60R Dual Band Handheld",
+    "category": "ham-radio",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:yaesu-ft60r}}",
+    "description": "The gold standard handheld for preppers. Military-grade durability with excellent receive sensitivity.",
+    "bestFor": ["Preppers", "Emergency Comms", "Durability"],
+    "pros": [
+      "Military-grade build quality",
+      "Excellent receive sensitivity",
+      "Wideband receive (aircraft, NOAA)",
+      "EAI emergency feature",
+      "Works with AA battery pack"
+    ],
+    "cons": [
+      "Higher price point",
+      "Older design",
+      "Menu takes learning",
+      "No digital modes"
+    ],
+    "verifyOnListing": "Ensure genuine Yaesu - counterfeits exist"
   }
 ]

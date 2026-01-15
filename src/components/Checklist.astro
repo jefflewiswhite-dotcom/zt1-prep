@@ -1,8 +1,12 @@
 ---
+import products from '@/data/products.json';
+
 interface ChecklistItem {
   item: string;
   note?: string;
   priority?: 'essential' | 'recommended' | 'optional';
+  productSlug?: string;  // Link to product from catalog
+  href?: string;         // Custom link (for roundup pages, etc.)
 }
 
 interface Props {
@@ -24,6 +28,34 @@ const priorityLabels = {
   recommended: { label: 'Recommended', color: 'bg-stone-100 text-stone-700' },
   optional: { label: 'Optional', color: 'bg-stone-100 text-stone-500' },
 };
+
+// Generate Amazon search URL if affiliate URL is a placeholder
+function getAffiliateUrl(url: string, productName: string): string {
+  if (url.startsWith('{{') || !url.startsWith('http')) {
+    const searchQuery = encodeURIComponent(productName);
+    return `https://www.amazon.com/s?k=${searchQuery}&tag=zt1prep-20`;
+  }
+  return url;
+}
+
+// Get link info for a checklist item
+function getItemLink(item: ChecklistItem): { url: string; label: string; isExternal: boolean } | null {
+  if (item.href) {
+    const isExternal = item.href.startsWith('http');
+    return { url: item.href, label: 'See our picks', isExternal };
+  }
+  if (item.productSlug) {
+    const product = products.find((p) => p.slug === item.productSlug);
+    if (product) {
+      return {
+        url: getAffiliateUrl(product.affiliateUrl, product.name),
+        label: 'Our pick',
+        isExternal: true
+      };
+    }
+  }
+  return null;
+}
 ---
 
 <div class:list={['checklist', printable ? 'print:break-inside-avoid' : '']}>
@@ -51,6 +83,19 @@ const priorityLabels = {
                 {priorityLabels[item.priority].label}
               </span>
             )}
+            {(() => {
+              const link = getItemLink(item);
+              return link ? (
+                <a
+                  href={link.url}
+                  target={link.isExternal ? '_blank' : undefined}
+                  rel={link.isExternal ? 'noopener noreferrer sponsored' : undefined}
+                  class="text-xs font-medium text-forest-600 hover:text-forest-700 hover:underline print:hidden"
+                >
+                  → {link.label}
+                </a>
+              ) : null;
+            })()}
           </div>
           {item.note && (
             <p class="text-sm text-stone-500 mt-1">{item.note}</p>

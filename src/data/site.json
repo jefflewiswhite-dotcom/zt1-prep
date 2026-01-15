@@ -14,7 +14,7 @@
     "youtube": ""
   },
   "navigation": [
-    { "label": "Start Here", "href": "/start-here" },
+    { "label": "Start Here", "href": "/guides/start-here" },
     { "label": "Guides", "href": "/guides" },
     { "label": "Gear", "href": "/gear" },
     { "label": "About", "href": "/about" }
