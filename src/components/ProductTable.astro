@@ -1,0 +1,95 @@
+---
+import products from '@/data/products.json';
+
+interface Props {
+  slugs: string[];
+  columns?: ('name' | 'bestFor' | 'pros' | 'link')[];
+  title?: string;
+}
+
+const {
+  slugs,
+  columns = ['name', 'bestFor', 'pros', 'link'],
+  title,
+} = Astro.props;
+
+const tableProducts = slugs
+  .map((slug) => products.find((p) => p.slug === slug))
+  .filter(Boolean);
+---
+
+<div class="overflow-x-auto">
+  {title && (
+    <h3 class="font-bold text-lg text-stone-900 mb-4">{title}</h3>
+  )}
+  <table class="w-full border-collapse">
+    <thead>
+      <tr class="bg-stone-100">
+        {columns.includes('name') && (
+          <th class="text-left p-4 font-semibold text-stone-900 border-b border-stone-200">Product</th>
+        )}
+        {columns.includes('bestFor') && (
+          <th class="text-left p-4 font-semibold text-stone-900 border-b border-stone-200">Best For</th>
+        )}
+        {columns.includes('pros') && (
+          <th class="text-left p-4 font-semibold text-stone-900 border-b border-stone-200">Key Features</th>
+        )}
+        {columns.includes('link') && (
+          <th class="text-center p-4 font-semibold text-stone-900 border-b border-stone-200">Price</th>
+        )}
+      </tr>
+    </thead>
+    <tbody>
+      {tableProducts.map((product, index) => (
+        <tr class:list={[
+          'border-b border-stone-200',
+          index % 2 === 0 ? 'bg-white' : 'bg-stone-50',
+        ]}>
+          {columns.includes('name') && (
+            <td class="p-4">
+              <div class="font-medium text-stone-900">{product.name}</div>
+              <div class="text-sm text-stone-500 mt-1">{product.description}</div>
+            </td>
+          )}
+          {columns.includes('bestFor') && (
+            <td class="p-4">
+              <div class="flex flex-wrap gap-1">
+                {product.bestFor?.slice(0, 2).map((tag) => (
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-forest-100 text-forest-800">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </td>
+          )}
+          {columns.includes('pros') && (
+            <td class="p-4">
+              <ul class="space-y-1">
+                {product.pros?.slice(0, 2).map((pro) => (
+                  <li class="flex items-start gap-1 text-sm text-stone-600">
+                    <svg class="w-4 h-4 text-forest-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {pro}
+                  </li>
+                ))}
+              </ul>
+            </td>
+          )}
+          {columns.includes('link') && (
+            <td class="p-4 text-center">
+              <a
+                href={product.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors whitespace-nowrap"
+              >
+                Check Price
+              </a>
+            </td>
+          )}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

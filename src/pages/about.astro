@@ -1,0 +1,89 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import siteData from '@/data/site.json';
+---
+
+<BaseLayout
+  title="About Us"
+  description="Learn about ZT1 Prep and our mission to help everyday people build practical, sustainable preparedness—from zero to one."
+>
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <article class="prose prose-stone lg:prose-lg max-w-none">
+      <h1>About ZT1 Prep</h1>
+
+      <p class="lead text-xl text-stone-600">
+        {siteData.description}
+      </p>
+
+      <h2>Our Mission</h2>
+
+      <p>
+        We believe everyone should be prepared for life's unexpected moments—not out of fear, but from a place of confidence and common sense. Our goal is to help you take that first step from unprepared to ready.
+      </p>
+
+      <p>
+        That's what "Zero to One" means: going from nothing to something. Not building a bunker or stockpiling for the apocalypse, but having the basics covered so you can handle power outages, severe weather, unexpected evacuations, and everyday emergencies.
+      </p>
+
+      <h2>What We Cover</h2>
+
+      <ul>
+        <li><strong>Bug out bags</strong> — Mobile emergency kits for when you need to leave quickly</li>
+        <li><strong>Get home bags</strong> — Compact kits for getting home when the unexpected happens</li>
+        <li><strong>Water preparedness</strong> — Storage, purification, and portable filtration</li>
+        <li><strong>Emergency power</strong> — Backup power for grid-down situations</li>
+        <li><strong>Food storage</strong> — Building a practical emergency food supply</li>
+        <li><strong>Home emergency kits</strong> — What to have when sheltering in place</li>
+        <li><strong>Vehicle preparedness</strong> — Car kits for roadside emergencies and more</li>
+        <li><strong>Skills & planning</strong> — The knowledge that makes gear useful</li>
+      </ul>
+
+      <h2>Our Approach</h2>
+
+      <p>
+        We're not about fear-mongering or doomsday scenarios. We focus on practical, achievable preparedness for the emergencies that actually happen—storms, power outages, job loss, natural disasters, and unexpected disruptions to daily life.
+      </p>
+
+      <p>
+        Our content is:
+      </p>
+
+      <ul>
+        <li><strong>Practical</strong> — Focused on real-world scenarios, not fantasy</li>
+        <li><strong>Accessible</strong> — Budget-friendly options alongside premium picks</li>
+        <li><strong>Honest</strong> — We clearly disclose affiliate relationships and recommend only what we'd use ourselves</li>
+        <li><strong>Sustainable</strong> — Building preparedness that doesn't require constant spending</li>
+      </ul>
+
+      <h2>How We Make Money</h2>
+
+      <p>
+        ZT1 Prep is supported through affiliate partnerships. When you purchase products through our links, we may earn a commission at no extra cost to you. This keeps our content free and helps us continue creating helpful resources.
+      </p>
+
+      <p>
+        We only recommend products we believe provide real value. Our opinions are our own, and affiliate relationships never influence our ratings or recommendations. Learn more on our <a href="/affiliate-disclosure">affiliate disclosure page</a>.
+      </p>
+
+      <h2>Start Your Journey</h2>
+
+      <p>
+        New to preparedness? Start with our <a href="/guides/start-here">Getting Started Guide</a>, which walks you through building practical readiness in achievable steps.
+      </p>
+
+      <p>
+        Ready to build a bug out bag? Our <a href="/guides/bug-out-bag">Bug Out Bag Guide</a> covers everything you need to know.
+      </p>
+
+      <p>
+        Have questions? <a href="/contact">Get in touch</a>—we'd love to hear from you.
+      </p>
+
+      <hr />
+
+      <p class="text-stone-500 text-sm">
+        ZT1 Prep — Everyday readiness, from zero to one.
+      </p>
+    </article>
+  </main>
+</BaseLayout>

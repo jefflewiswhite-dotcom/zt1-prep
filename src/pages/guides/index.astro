@@ -1,0 +1,93 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts', ({ data }) => data.category === 'guides');
+
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
+);
+
+// Separate pillars from other guides
+const pillarPosts = sortedPosts.filter(post => post.data.contentType === 'pillar');
+const otherPosts = sortedPosts.filter(post => post.data.contentType !== 'pillar');
+---
+
+<BaseLayout
+  title="Preparedness Guides"
+  description="Comprehensive guides on emergency preparedness, bug out bags, survival skills, and building practical readiness for everyday emergencies."
+>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Header -->
+    <div class="mb-12">
+      <h1 class="text-4xl font-bold text-stone-900 mb-4">Preparedness Guides</h1>
+      <p class="text-xl text-stone-600 max-w-3xl">
+        Comprehensive guides to help you build practical, sustainable preparedness. Start with the pillars, then explore specific topics.
+      </p>
+    </div>
+
+    <!-- Pillar Guides -->
+    {pillarPosts.length > 0 && (
+      <section class="mb-16">
+        <h2 class="text-2xl font-bold text-stone-900 mb-6 flex items-center">
+          <span class="w-2 h-8 bg-forest-600 rounded mr-3"></span>
+          Start Here: Core Guides
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          {pillarPosts.map((post) => (
+            <article class="bg-white border-2 border-forest-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+              <a href={`/guides/${post.slug}/`} class="block p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="text-xs font-medium px-2 py-1 rounded bg-forest-100 text-forest-800">
+                    Pillar Guide
+                  </span>
+                </div>
+                <h3 class="text-xl font-semibold text-stone-900 mb-3 hover:text-forest-700 transition-colors">
+                  {post.data.title}
+                </h3>
+                <p class="text-stone-600">
+                  {post.data.description}
+                </p>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Other Guides -->
+    {otherPosts.length > 0 && (
+      <section>
+        <h2 class="text-2xl font-bold text-stone-900 mb-6 flex items-center">
+          <span class="w-2 h-8 bg-stone-400 rounded mr-3"></span>
+          All Guides
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {otherPosts.map((post) => (
+            <article class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+              <a href={`/guides/${post.slug}/`} class="block p-6">
+                <h3 class="text-lg font-semibold text-stone-900 mb-2 hover:text-forest-700 transition-colors">
+                  {post.data.title}
+                </h3>
+                <p class="text-stone-600 text-sm line-clamp-2">
+                  {post.data.description}
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  {post.data.tags.slice(0, 3).map((tag) => (
+                    <span class="text-xs text-stone-500 bg-stone-100 px-2 py-1 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {sortedPosts.length === 0 && (
+      <p class="text-stone-600 text-center py-12">No guides available yet. Check back soon!</p>
+    )}
+  </main>
+</BaseLayout>

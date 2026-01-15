@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug: string;
+  category?: string;
+  tags?: string[];
+  limit?: number;
+}
+
+const { currentSlug, category, tags = [], limit = 3 } = Astro.props;
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+
+// Score posts by relevance
+const scoredPosts = allPosts
+  .filter((post) => post.slug !== currentSlug)
+  .map((post) => {
+    let score = 0;
+
+    // Same category
+    if (category && post.data.category === category) {
+      score += 3;
+    }
+
+    // Matching tags
+    const matchingTags = post.data.tags.filter((tag) => tags.includes(tag));
+    score += matchingTags.length * 2;
+
+    // Same hub
+    if (post.data.hub && tags.some((tag) => post.data.hub?.includes(tag))) {
+      score += 2;
+    }
+
+    return { post, score };
+  })
+  .filter((item) => item.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, limit);
+
+const relatedPosts = scoredPosts.map((item) => item.post);
+---
+
+{relatedPosts.length > 0 && (
+  <section class="border-t border-stone-200 pt-12">
+    <h2 class="text-2xl font-bold text-stone-900 mb-6">Related Guides</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      {relatedPosts.map((post) => (
+        <a
+          href={`/posts/${post.slug}`}
+          class="group block bg-white border border-stone-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+        >
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-forest-100 text-forest-800 capitalize mb-3">
+            {post.data.category}
+          </span>
+          <h3 class="font-semibold text-stone-900 group-hover:text-forest-700 transition-colors line-clamp-2">
+            {post.data.title}
+          </h3>
+          <p class="text-sm text-stone-500 mt-2 line-clamp-2">
+            {post.data.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

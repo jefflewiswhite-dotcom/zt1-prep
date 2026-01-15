@@ -1,0 +1,85 @@
+---
+interface ChecklistItem {
+  item: string;
+  note?: string;
+  priority?: 'essential' | 'recommended' | 'optional';
+}
+
+interface Props {
+  title?: string;
+  items: ChecklistItem[];
+  printable?: boolean;
+}
+
+const { title, items, printable = false } = Astro.props;
+
+const priorityStyles = {
+  essential: 'border-forest-500 bg-forest-50',
+  recommended: 'border-stone-300 bg-white',
+  optional: 'border-stone-200 bg-stone-50',
+};
+
+const priorityLabels = {
+  essential: { label: 'Essential', color: 'bg-forest-100 text-forest-800' },
+  recommended: { label: 'Recommended', color: 'bg-stone-100 text-stone-700' },
+  optional: { label: 'Optional', color: 'bg-stone-100 text-stone-500' },
+};
+---
+
+<div class:list={['checklist', printable ? 'print:break-inside-avoid' : '']}>
+  {title && (
+    <h3 class="font-bold text-lg text-stone-900 mb-4">{title}</h3>
+  )}
+
+  <ul class="space-y-2">
+    {items.map((item) => (
+      <li class:list={[
+        'flex items-start gap-3 p-3 rounded-lg border-l-4',
+        priorityStyles[item.priority || 'recommended'],
+      ]}>
+        <div class="flex-shrink-0 mt-0.5">
+          <div class="w-5 h-5 rounded border-2 border-stone-300 bg-white print:border-stone-400" />
+        </div>
+        <div class="flex-grow">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-stone-800">{item.item}</span>
+            {item.priority && (
+              <span class:list={[
+                'text-xs px-2 py-0.5 rounded-full font-medium',
+                priorityLabels[item.priority].color,
+              ]}>
+                {priorityLabels[item.priority].label}
+              </span>
+            )}
+          </div>
+          {item.note && (
+            <p class="text-sm text-stone-500 mt-1">{item.note}</p>
+          )}
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  {printable && (
+    <div class="mt-6 print:hidden">
+      <button
+        type="button"
+        class="inline-flex items-center gap-2 text-sm font-medium text-forest-700 hover:text-forest-800"
+        onclick="window.print()"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+        </svg>
+        Print this checklist
+      </button>
+    </div>
+  )}
+</div>
+
+<style>
+  @media print {
+    .checklist {
+      font-size: 12pt;
+    }
+  }
+</style>

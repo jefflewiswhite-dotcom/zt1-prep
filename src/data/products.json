@@ -1,0 +1,483 @@
+[
+  {
+    "slug": "sawyer-squeeze",
+    "name": "Sawyer Squeeze Water Filter",
+    "category": "water-filter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:sawyer-squeeze}}",
+    "description": "Highly rated point-of-use water filter with 0.1 micron filtration. Lightweight and versatile for bags of all sizes.",
+    "bestFor": ["Bug Out Bag", "Get Home Bag", "Backpacking"],
+    "pros": [
+      "Filters 100,000 gallons",
+      "Lightweight (3 oz)",
+      "0.1 micron absolute filtration",
+      "Multiple attachment options",
+      "Field cleanable"
+    ],
+    "cons": [
+      "Can freeze and crack in winter",
+      "Squeeze bags may wear out",
+      "Slower than gravity filters"
+    ],
+    "verifyOnListing": "Check current price and included accessories on Amazon"
+  },
+  {
+    "slug": "lifestraw-personal",
+    "name": "LifeStraw Personal Water Filter",
+    "category": "water-filter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:lifestraw-personal}}",
+    "description": "Iconic straw-style water filter. Simple, reliable, and perfect for emergency kits.",
+    "bestFor": ["Get Home Bag", "Car Kit", "Beginners"],
+    "pros": [
+      "Extremely simple to use",
+      "No batteries or moving parts",
+      "Compact and lightweight",
+      "Filters 1,000 gallons",
+      "Affordable"
+    ],
+    "cons": [
+      "Can't store filtered water",
+      "Must drink directly from source",
+      "Doesn't filter viruses"
+    ],
+    "verifyOnListing": "Verify authenticity - buy from authorized sellers only"
+  },
+  {
+    "slug": "katadyn-befree",
+    "name": "Katadyn BeFree Water Filter",
+    "category": "water-filter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:katadyn-befree}}",
+    "description": "Fast-flow filter with soft flask. Great for hikers who prioritize speed and weight.",
+    "bestFor": ["Ultralight Bags", "Hiking", "Fast Filtering"],
+    "pros": [
+      "Very fast flow rate",
+      "Ultralight design",
+      "Easy to clean (shake)",
+      "Collapsible flask included"
+    ],
+    "cons": [
+      "Filter can clog in murky water",
+      "Flask less durable than bottles",
+      "Higher cost per gallon"
+    ],
+    "verifyOnListing": "Check flask size options - 0.6L and 1L available"
+  },
+  {
+    "slug": "aquatabs-water-purification",
+    "name": "Aquatabs Water Purification Tablets",
+    "category": "water-purification",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:aquatabs}}",
+    "description": "EPA-registered water purification tablets. Compact backup for any emergency kit.",
+    "bestFor": ["Backup Purification", "Ultralight", "All Kits"],
+    "pros": [
+      "Extremely lightweight",
+      "Long shelf life (5 years)",
+      "Kills viruses (filters don't)",
+      "Very affordable",
+      "EPA registered"
+    ],
+    "cons": [
+      "30-minute wait time",
+      "Slight chlorine taste",
+      "Doesn't remove sediment"
+    ],
+    "verifyOnListing": "Check expiration date and tablet count"
+  },
+  {
+    "slug": "sol-emergency-bivvy",
+    "name": "SOL Emergency Bivvy",
+    "category": "emergency-shelter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:sol-emergency-bivvy}}",
+    "description": "Reflective emergency bivvy that retains 90% of body heat. Essential for every bag.",
+    "bestFor": ["Bug Out Bag", "Get Home Bag", "Car Kit"],
+    "pros": [
+      "Retains 90% body heat",
+      "Weighs only 3.8 oz",
+      "Reusable (unlike blankets)",
+      "Bright orange for signaling",
+      "Waterproof"
+    ],
+    "cons": [
+      "Can cause condensation inside",
+      "Crinkly/noisy material",
+      "Not as warm as sleeping bag"
+    ],
+    "verifyOnListing": "Get the bivvy, not the blanket - bivvy is reusable"
+  },
+  {
+    "slug": "teton-sports-celsius",
+    "name": "TETON Sports Celsius Sleeping Bag",
+    "category": "sleeping-bag",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:teton-celsius}}",
+    "description": "Budget-friendly sleeping bag with excellent warmth-to-price ratio.",
+    "bestFor": ["Budget Builds", "Car Kit", "Home Storage"],
+    "pros": [
+      "Excellent value",
+      "Multiple temperature ratings",
+      "Full-length zipper",
+      "Compression sack included",
+      "Machine washable"
+    ],
+    "cons": [
+      "Heavier than premium options",
+      "Bulkier packed size",
+      "Synthetic insulation"
+    ],
+    "verifyOnListing": "Check temperature rating - multiple versions available"
+  },
+  {
+    "slug": "exotac-firesleeve",
+    "name": "Exotac fireSLEEVE Lighter Case",
+    "category": "fire-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:exotac-firesleeve}}",
+    "description": "Waterproof case for standard Bic lighters. Turns a disposable lighter into reliable survival gear.",
+    "bestFor": ["All Kits", "EDC", "Waterproofing"],
+    "pros": [
+      "Makes any Bic waterproof",
+      "Adds grip and durability",
+      "Lanyard attachment",
+      "Very affordable"
+    ],
+    "cons": [
+      "Lighter not included",
+      "Adds bulk to lighter",
+      "Only fits standard Bic size"
+    ],
+    "verifyOnListing": "Lighter sold separately"
+  },
+  {
+    "slug": "light-my-fire-ferro-rod",
+    "name": "Light My Fire Swedish FireSteel 2.0",
+    "category": "fire-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:light-my-fire-ferro}}",
+    "description": "Reliable ferro rod that works in any weather. 12,000+ strikes.",
+    "bestFor": ["Bug Out Bag", "Backup Fire", "Wet Conditions"],
+    "pros": [
+      "Works when wet",
+      "12,000+ strikes",
+      "3,000°F sparks",
+      "No fuel needed",
+      "Indefinite shelf life"
+    ],
+    "cons": [
+      "Requires practice",
+      "Needs dry tinder",
+      "Slower than lighter"
+    ],
+    "verifyOnListing": "Get the Scout or Army size based on your needs"
+  },
+  {
+    "slug": "streamlight-protac",
+    "name": "Streamlight ProTac 2L-X",
+    "category": "flashlight",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:streamlight-protac}}",
+    "description": "Professional-grade tactical flashlight with excellent durability and output.",
+    "bestFor": ["Bug Out Bag", "EDC", "Durability"],
+    "pros": [
+      "500 lumens output",
+      "IPX7 waterproof",
+      "Impact resistant",
+      "Multiple modes",
+      "Pocket clip included"
+    ],
+    "cons": [
+      "Uses CR123A batteries",
+      "Tail switch only",
+      "No built-in charging"
+    ],
+    "verifyOnListing": "Check battery type - USB rechargeable version available"
+  },
+  {
+    "slug": "petzl-actik-core",
+    "name": "Petzl Actik Core Headlamp",
+    "category": "headlamp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:petzl-actik-core}}",
+    "description": "Rechargeable headlamp with excellent battery life and red light mode.",
+    "bestFor": ["Bug Out Bag", "Hands-Free", "Rechargeable"],
+    "pros": [
+      "450 lumens max",
+      "Rechargeable + AAA compatible",
+      "Red light preserves night vision",
+      "Comfortable headband",
+      "Reflective elements"
+    ],
+    "cons": [
+      "Higher price point",
+      "Complex button interface",
+      "Core battery sold separately"
+    ],
+    "verifyOnListing": "Check if Core battery is included or sold separately"
+  },
+  {
+    "slug": "leatherman-wave-plus",
+    "name": "Leatherman Wave+",
+    "category": "multitool",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:leatherman-wave-plus}}",
+    "description": "The gold standard in multitools. 18 tools, built to last generations.",
+    "bestFor": ["Bug Out Bag", "EDC", "All-Around Use"],
+    "pros": [
+      "18 essential tools",
+      "Outside-accessible blades",
+      "25-year warranty",
+      "Premium build quality",
+      "Replaceable wire cutters"
+    ],
+    "cons": [
+      "Higher price point",
+      "Heavier than budget options",
+      "No scissors on basic model"
+    ],
+    "verifyOnListing": "Wave+ has replaceable cutters, original Wave does not"
+  },
+  {
+    "slug": "victorinox-swiss-army-huntsman",
+    "name": "Victorinox Swiss Army Huntsman",
+    "category": "multitool",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:victorinox-huntsman}}",
+    "description": "Classic Swiss Army knife with wood saw. Great balance of tools and portability.",
+    "bestFor": ["Get Home Bag", "Budget-Friendly", "Lightweight"],
+    "pros": [
+      "15 functions",
+      "Includes wood saw",
+      "Very portable",
+      "Lifetime warranty",
+      "Classic reliability"
+    ],
+    "cons": [
+      "Locking blade illegal some places",
+      "No pliers",
+      "Small blade length"
+    ],
+    "verifyOnListing": "Many variations - ensure you get genuine Victorinox"
+  },
+  {
+    "slug": "morakniv-companion",
+    "name": "Morakniv Companion Fixed Blade",
+    "category": "knife",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:morakniv-companion}}",
+    "description": "Legendary Scandinavian knife with incredible value. Razor sharp out of the box.",
+    "bestFor": ["Bug Out Bag", "Budget-Friendly", "Batoning"],
+    "pros": [
+      "Exceptional value",
+      "Razor sharp edge",
+      "Comfortable grip",
+      "Stainless or carbon options",
+      "Lightweight"
+    ],
+    "cons": [
+      "Plastic sheath basic",
+      "Short blade for batoning",
+      "No full tang"
+    ],
+    "verifyOnListing": "Stainless (HD) vs Carbon - carbon sharper but rusts"
+  },
+  {
+    "slug": "adventure-medical-kits-ultralight",
+    "name": "Adventure Medical Kits Ultralight .7",
+    "category": "first-aid",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:amk-ultralight}}",
+    "description": "Well-organized ultralight first aid kit designed for 1-2 people.",
+    "bestFor": ["Get Home Bag", "Day Hikes", "Ultralight"],
+    "pros": [
+      "Organized pouches",
+      "DryFlex bags waterproof",
+      "Lightweight (5.6 oz)",
+      "Good starter contents",
+      "Compact size"
+    ],
+    "cons": [
+      "May need to supplement",
+      "Basic supplies only",
+      "Pouches can tear"
+    ],
+    "verifyOnListing": "Multiple sizes available - .7 is for 1-2 people"
+  },
+  {
+    "slug": "surviveware-large-first-aid",
+    "name": "Surviveware Large First Aid Kit",
+    "category": "first-aid",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:surviveware-large}}",
+    "description": "Comprehensive 200-piece kit with MOLLE attachment. Great for families.",
+    "bestFor": ["Bug Out Bag", "Families", "Comprehensive"],
+    "pros": [
+      "200 pieces",
+      "Labeled compartments",
+      "MOLLE compatible",
+      "Includes trauma supplies",
+      "Waterproof inner pouches"
+    ],
+    "cons": [
+      "Larger/heavier",
+      "Some fillers included",
+      "May need customization"
+    ],
+    "verifyOnListing": "Check current contents - may vary by batch"
+  },
+  {
+    "slug": "datrex-emergency-food-bars",
+    "name": "Datrex Emergency Food Bars",
+    "category": "emergency-food",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:datrex-food-bars}}",
+    "description": "Coast Guard approved emergency rations. 5-year shelf life, non-thirst provoking.",
+    "bestFor": ["All Kits", "Long-Term Storage", "Compact"],
+    "pros": [
+      "5-year shelf life",
+      "Coast Guard approved",
+      "Non-thirst provoking",
+      "Compact packaging",
+      "No preparation needed"
+    ],
+    "cons": [
+      "Bland taste",
+      "Not a complete diet",
+      "Can crumble in heat"
+    ],
+    "verifyOnListing": "Check manufacture date for freshest stock"
+  },
+  {
+    "slug": "sos-food-labs-rations",
+    "name": "SOS Food Labs Emergency Rations",
+    "category": "emergency-food",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:sos-food-labs}}",
+    "description": "US Coast Guard approved emergency food bars with 5-year shelf life.",
+    "bestFor": ["Car Kit", "72-Hour Kit", "Budget"],
+    "pros": [
+      "Coast Guard approved",
+      "5-year shelf life",
+      "Individually wrapped",
+      "Apple cinnamon flavor",
+      "Good value"
+    ],
+    "cons": [
+      "Can be dry",
+      "High calorie per bar",
+      "Limited flavor options"
+    ],
+    "verifyOnListing": "3600 calorie pack is standard - check calorie needs"
+  },
+  {
+    "slug": "midland-er310",
+    "name": "Midland ER310 Emergency Radio",
+    "category": "emergency-radio",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:midland-er310}}",
+    "description": "Multiple power options including hand crank and solar. NOAA weather alerts.",
+    "bestFor": ["Bug Out Bag", "Power Outages", "All-Around"],
+    "pros": [
+      "4 power sources",
+      "NOAA weather alerts",
+      "Built-in flashlight",
+      "USB charging output",
+      "SOS beacon"
+    ],
+    "cons": [
+      "Crank is slow to charge",
+      "Solar is supplemental only",
+      "Antenna not replaceable"
+    ],
+    "verifyOnListing": "ER310 is newer than ER300 - verify model"
+  },
+  {
+    "slug": "anker-powercore-10000",
+    "name": "Anker PowerCore 10000",
+    "category": "power-bank",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:anker-powercore-10000}}",
+    "description": "Compact, reliable power bank with excellent capacity-to-weight ratio.",
+    "bestFor": ["Get Home Bag", "EDC", "Compact"],
+    "pros": [
+      "10,000mAh capacity",
+      "Very compact",
+      "2+ phone charges",
+      "High quality cells",
+      "18-month warranty"
+    ],
+    "cons": [
+      "Single USB-A port",
+      "No fast charging input",
+      "No display"
+    ],
+    "verifyOnListing": "Multiple versions - check for USB-C if needed"
+  },
+  {
+    "slug": "goal-zero-venture-30",
+    "name": "Goal Zero Venture 30 Power Bank",
+    "category": "power-bank",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:goal-zero-venture-30}}",
+    "description": "Rugged, water-resistant power bank built for outdoor use.",
+    "bestFor": ["Bug Out Bag", "Outdoor Use", "Durability"],
+    "pros": [
+      "IPX67 waterproof",
+      "Drop tested",
+      "7,800mAh capacity",
+      "Built-in flashlight",
+      "Pass-through charging"
+    ],
+    "cons": [
+      "Lower capacity for size",
+      "Higher price per mAh",
+      "Heavier than standard banks"
+    ],
+    "verifyOnListing": "Check if solar panel is included or sold separately"
+  },
+  {
+    "slug": "jackery-explorer-300",
+    "name": "Jackery Explorer 300 Portable Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:jackery-explorer-300}}",
+    "description": "Portable power station with AC outlet. Powers small appliances during outages.",
+    "bestFor": ["Power Outages", "Home Backup", "Car Camping"],
+    "pros": [
+      "293Wh capacity",
+      "Pure sine wave AC",
+      "Multiple output ports",
+      "Solar compatible",
+      "Relatively portable"
+    ],
+    "cons": [
+      "Heavy (7.1 lbs)",
+      "Not for high-draw devices",
+      "Solar panel sold separately"
+    ],
+    "verifyOnListing": "Solar panel sold separately - check bundles"
+  },
+  {
+    "slug": "aqua-pod-kit",
+    "name": "AquaPod Kit Emergency Water Storage",
+    "category": "water-storage",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:aqua-pod-kit}}",
+    "description": "65-gallon bathtub water storage bladder. Fill before storms hit.",
+    "bestFor": ["Power Outages", "Hurricanes", "Home Storage"],
+    "pros": [
+      "65 gallon capacity",
+      "Stores in bathtub",
+      "Food-grade liner",
+      "Pump included",
+      "Easy to fill"
+    ],
+    "cons": [
+      "Single use",
+      "Requires advance warning",
+      "Takes up bathtub"
+    ],
+    "verifyOnListing": "Fill before emergency - not for ongoing storage"
+  },
+  {
+    "slug": "reliance-aqua-tainer",
+    "name": "Reliance Aqua-Tainer 7 Gallon",
+    "category": "water-storage",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:reliance-aqua-tainer}}",
+    "description": "Stackable 7-gallon water container with spigot. Standard for home water storage.",
+    "bestFor": ["Home Storage", "72-Hour Kit", "Stackable"],
+    "pros": [
+      "7 gallon capacity",
+      "Built-in spigot",
+      "Stackable design",
+      "BPA-free",
+      "Easy to transport when full"
+    ],
+    "cons": [
+      "Can develop leaks over time",
+      "Spigot is basic",
+      "Heavy when full (56 lbs)"
+    ],
+    "verifyOnListing": "Blue tint helps prevent algae growth"
+  }
+]

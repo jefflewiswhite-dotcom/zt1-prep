@@ -1,0 +1,85 @@
+---
+import siteData from '@/data/site.json';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-stone-900 text-stone-300">
+  <!-- Main Footer -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-lg bg-forest-600 flex items-center justify-center">
+            <span class="text-white font-bold text-sm">ZT1</span>
+          </div>
+          <span class="font-bold text-white">ZT1 Prep</span>
+        </a>
+        <p class="text-sm text-stone-400 mb-4">
+          {siteData.tagline}
+        </p>
+        <p class="text-sm text-stone-500">
+          Helping everyday Americans build practical preparedness—no fear, no hype, just what works.
+        </p>
+      </div>
+
+      <!-- Guides -->
+      <div>
+        <h3 class="font-semibold text-white mb-4">Popular Guides</h3>
+        <ul class="space-y-3">
+          {siteData.footerNavigation.guides.map((item) => (
+            <li>
+              <a href={item.href} class="text-sm text-stone-400 hover:text-white transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold text-white mb-4">Resources</h3>
+        <ul class="space-y-3">
+          {siteData.footerNavigation.resources.map((item) => (
+            <li>
+              <a href={item.href} class="text-sm text-stone-400 hover:text-white transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold text-white mb-4">Company</h3>
+        <ul class="space-y-3">
+          {siteData.footerNavigation.company.map((item) => (
+            <li>
+              <a href={item.href} class="text-sm text-stone-400 hover:text-white transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-stone-500">
+          &copy; {currentYear} {siteData.fullName}. All rights reserved.
+        </p>
+        <p class="text-xs text-stone-600 text-center md:text-right max-w-xl">
+          The information on this site is for educational purposes only and is not professional advice.
+          Always verify product details on current listings and consult professionals for specific situations.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

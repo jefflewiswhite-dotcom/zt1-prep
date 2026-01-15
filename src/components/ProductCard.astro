@@ -1,0 +1,181 @@
+---
+import products from '@/data/products.json';
+
+interface Props {
+  slug: string;
+  showPros?: boolean;
+  showCons?: boolean;
+  variant?: 'default' | 'compact' | 'featured';
+  badge?: string;
+}
+
+const { slug, showPros = true, showCons = true, variant = 'default', badge } = Astro.props;
+
+const product = products.find((p) => p.slug === slug);
+
+if (!product) {
+  console.warn(`Product not found: ${slug}`);
+}
+---
+
+{product && variant === 'default' && (
+  <div class="bg-white border border-stone-200 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+    {badge && (
+      <div class="bg-forest-600 text-white text-xs font-semibold px-3 py-1 text-center">
+        {badge}
+      </div>
+    )}
+    <div class="p-6">
+      <h3 class="font-bold text-lg text-stone-900 mb-2">{product.name}</h3>
+      <p class="text-stone-600 text-sm mb-4">{product.description}</p>
+
+      {/* Best For Tags */}
+      {product.bestFor && product.bestFor.length > 0 && (
+        <div class="flex flex-wrap gap-1 mb-4">
+          {product.bestFor.map((tag) => (
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-stone-100 text-stone-700">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Pros/Cons */}
+      <div class="space-y-3 mb-4">
+        {showPros && product.pros && product.pros.length > 0 && (
+          <div>
+            <p class="text-xs font-semibold text-forest-700 uppercase tracking-wide mb-1">Pros</p>
+            <ul class="space-y-1">
+              {product.pros.slice(0, 3).map((pro) => (
+                <li class="flex items-start gap-2 text-sm text-stone-600">
+                  <svg class="w-4 h-4 text-forest-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {pro}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {showCons && product.cons && product.cons.length > 0 && (
+          <div>
+            <p class="text-xs font-semibold text-rust-700 uppercase tracking-wide mb-1">Cons</p>
+            <ul class="space-y-1">
+              {product.cons.slice(0, 2).map((con) => (
+                <li class="flex items-start gap-2 text-sm text-stone-600">
+                  <svg class="w-4 h-4 text-rust-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  {con}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      {/* Verify Notice */}
+      {product.verifyOnListing && (
+        <p class="text-xs text-stone-500 italic mb-4">
+          ℹ️ {product.verifyOnListing}
+        </p>
+      )}
+
+      {/* CTA */}
+      <a
+        href={product.affiliateUrl}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        class="block w-full text-center bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors"
+      >
+        Check Price on Amazon
+      </a>
+    </div>
+  </div>
+)}
+
+{product && variant === 'compact' && (
+  <div class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:shadow-md transition-shadow">
+    <div class="flex-grow">
+      <h4 class="font-semibold text-stone-900">{product.name}</h4>
+      <p class="text-sm text-stone-500 line-clamp-1">{product.description}</p>
+    </div>
+    <a
+      href={product.affiliateUrl}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      class="flex-shrink-0 bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+    >
+      View
+    </a>
+  </div>
+)}
+
+{product && variant === 'featured' && (
+  <div class="bg-gradient-to-br from-forest-50 to-stone-50 border-2 border-forest-200 rounded-xl p-6 relative overflow-hidden">
+    <div class="absolute top-0 right-0 bg-forest-600 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
+      {badge || 'Top Pick'}
+    </div>
+    <h3 class="font-bold text-xl text-stone-900 mb-2 pr-20">{product.name}</h3>
+    <p class="text-stone-600 mb-4">{product.description}</p>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      {showPros && product.pros && (
+        <div>
+          <p class="text-sm font-semibold text-forest-700 mb-2">What We Like</p>
+          <ul class="space-y-1">
+            {product.pros.map((pro) => (
+              <li class="flex items-start gap-2 text-sm text-stone-600">
+                <svg class="w-4 h-4 text-forest-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                {pro}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {showCons && product.cons && (
+        <div>
+          <p class="text-sm font-semibold text-rust-700 mb-2">Considerations</p>
+          <ul class="space-y-1">
+            {product.cons.map((con) => (
+              <li class="flex items-start gap-2 text-sm text-stone-600">
+                <svg class="w-4 h-4 text-rust-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01" />
+                </svg>
+                {con}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+
+    {product.verifyOnListing && (
+      <p class="text-xs text-stone-500 italic mb-4">
+        ℹ️ {product.verifyOnListing}
+      </p>
+    )}
+
+    <a
+      href={product.affiliateUrl}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+    >
+      Check Price on Amazon
+      <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
+  </div>
+)}
+
+{!product && (
+  <div class="bg-stone-100 border border-stone-200 rounded-lg p-4 text-center text-stone-500">
+    Product not found: {slug}
+  </div>
+)}

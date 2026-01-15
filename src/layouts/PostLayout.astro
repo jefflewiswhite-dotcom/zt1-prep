@@ -1,0 +1,161 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AffiliateDisclosure from '@/components/AffiliateDisclosure.astro';
+import TableOfContents from '@/components/TableOfContents.astro';
+import RelatedPosts from '@/components/RelatedPosts.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  headings: { depth: number; slug: string; text: string }[];
+}
+
+const { post, headings } = Astro.props;
+const { title, description, publishDate, updatedDate, author, category, tags, hasAffiliateLinks, image } = post.data;
+
+const formattedPublishDate = new Date(publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const formattedUpdateDate = updatedDate
+  ? new Date(updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  : null;
+
+// JSON-LD for article
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  image: image?.src,
+  datePublished: publishDate.toISOString(),
+  dateModified: (updatedDate || publishDate).toISOString(),
+  author: {
+    '@type': 'Organization',
+    name: 'ZT1 Prep',
+    url: 'https://zt1prep.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'ZT1 Prep',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://zt1prep.com/logo.png',
+    },
+  },
+};
+---
+
+<BaseLayout title={title} description={description} image={image?.src} jsonLd={jsonLd}>
+  <article class="py-8 md:py-12">
+    <!-- Breadcrumbs -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: category.charAt(0).toUpperCase() + category.slice(1), href: `/${category}` },
+          { label: title },
+        ]}
+      />
+    </div>
+
+    <!-- Header -->
+    <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+      <div class="flex items-center gap-2 text-sm text-stone-500 mb-4">
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-forest-100 text-forest-800 capitalize">
+          {category}
+        </span>
+        <span>•</span>
+        <time datetime={publishDate.toISOString()}>{formattedPublishDate}</time>
+        {formattedUpdateDate && (
+          <>
+            <span>•</span>
+            <span>Updated {formattedUpdateDate}</span>
+          </>
+        )}
+      </div>
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight mb-4">
+        {title}
+      </h1>
+
+      <p class="text-xl text-stone-600 leading-relaxed">
+        {description}
+      </p>
+    </header>
+
+    <!-- Affiliate Disclosure (if applicable) -->
+    {hasAffiliateLinks && (
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <AffiliateDisclosure />
+      </div>
+    )}
+
+    <!-- Main Content Area -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+        <!-- Table of Contents (sticky sidebar on large screens) -->
+        {headings.length > 0 && (
+          <aside class="hidden lg:block lg:col-span-3">
+            <div class="sticky top-8">
+              <TableOfContents headings={headings} />
+            </div>
+          </aside>
+        )}
+
+        <!-- Article Content -->
+        <div class={headings.length > 0 ? 'lg:col-span-9' : 'lg:col-span-12 max-w-4xl mx-auto'}>
+          <!-- Mobile TOC -->
+          {headings.length > 0 && (
+            <div class="lg:hidden mb-8">
+              <TableOfContents headings={headings} collapsible />
+            </div>
+          )}
+
+          <div class="prose prose-lg prose-stone max-w-none">
+            <slot />
+          </div>
+
+          <!-- Tags -->
+          {tags.length > 0 && (
+            <div class="mt-12 pt-8 border-t border-stone-200">
+              <div class="flex flex-wrap gap-2">
+                {tags.map((tag) => (
+                  <a
+                    href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}
+                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-stone-100 text-stone-700 hover:bg-stone-200 transition-colors"
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Author & Share -->
+          <div class="mt-8 pt-8 border-t border-stone-200">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-forest-100 flex items-center justify-center">
+                  <span class="text-forest-700 font-bold text-lg">ZT1</span>
+                </div>
+                <div>
+                  <p class="font-medium text-stone-900">{author}</p>
+                  <p class="text-sm text-stone-500">Practical preparedness for real life</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Posts -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <RelatedPosts currentSlug={post.slug} category={category} tags={tags} />
+    </div>
+  </article>
+</BaseLayout>

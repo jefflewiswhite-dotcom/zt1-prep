@@ -1,0 +1,119 @@
+---
+interface ComparisonItem {
+  feature: string;
+  optionA: string;
+  optionB: string;
+  winner?: 'A' | 'B' | 'tie';
+  note?: string;
+}
+
+interface Props {
+  optionAName: string;
+  optionBName: string;
+  optionASlug?: string;
+  optionBSlug?: string;
+  items: ComparisonItem[];
+  title?: string;
+  showLinks?: boolean;
+}
+
+const {
+  optionAName,
+  optionBName,
+  optionASlug,
+  optionBSlug,
+  items,
+  title,
+  showLinks = true,
+} = Astro.props;
+
+import products from '@/data/products.json';
+
+const productA = optionASlug ? products.find((p) => p.slug === optionASlug) : null;
+const productB = optionBSlug ? products.find((p) => p.slug === optionBSlug) : null;
+---
+
+<div class="overflow-x-auto">
+  {title && (
+    <h3 class="font-bold text-xl text-stone-900 mb-4">{title}</h3>
+  )}
+
+  <table class="w-full border-collapse border border-stone-200 rounded-lg overflow-hidden">
+    <thead>
+      <tr class="bg-stone-100">
+        <th class="text-left p-4 font-semibold text-stone-700 border-b border-stone-200 w-1/3">Feature</th>
+        <th class="text-center p-4 font-semibold text-stone-900 border-b border-stone-200 w-1/3 bg-forest-50">
+          {optionAName}
+        </th>
+        <th class="text-center p-4 font-semibold text-stone-900 border-b border-stone-200 w-1/3 bg-rust-50">
+          {optionBName}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {items.map((item, index) => (
+        <tr class:list={['border-b border-stone-200', index % 2 === 0 ? 'bg-white' : 'bg-stone-50']}>
+          <td class="p-4 font-medium text-stone-700">
+            {item.feature}
+            {item.note && (
+              <span class="block text-xs text-stone-500 mt-1">{item.note}</span>
+            )}
+          </td>
+          <td class:list={[
+            'p-4 text-center',
+            item.winner === 'A' ? 'bg-forest-50 font-semibold text-forest-800' : 'text-stone-700',
+          ]}>
+            {item.optionA}
+            {item.winner === 'A' && (
+              <span class="ml-1 text-forest-600">✓</span>
+            )}
+          </td>
+          <td class:list={[
+            'p-4 text-center',
+            item.winner === 'B' ? 'bg-forest-50 font-semibold text-forest-800' : 'text-stone-700',
+          ]}>
+            {item.optionB}
+            {item.winner === 'B' && (
+              <span class="ml-1 text-forest-600">✓</span>
+            )}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+    {showLinks && (productA || productB) && (
+      <tfoot>
+        <tr class="bg-stone-100">
+          <td class="p-4 font-medium text-stone-700">Price</td>
+          <td class="p-4 text-center">
+            {productA ? (
+              <a
+                href={productA.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+              >
+                Check Price
+              </a>
+            ) : (
+              <span class="text-stone-500">—</span>
+            )}
+          </td>
+          <td class="p-4 text-center">
+            {productB ? (
+              <a
+                href={productB.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                class="inline-flex items-center justify-center bg-forest-600 hover:bg-forest-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+              >
+                Check Price
+              </a>
+            ) : (
+              <span class="text-stone-500">—</span>
+            )}
+          </td>
+        </tr>
+      </tfoot>
+    )}
+  </table>
+</div>

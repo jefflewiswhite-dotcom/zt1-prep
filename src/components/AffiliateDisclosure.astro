@@ -1,0 +1,78 @@
+---
+interface Props {
+  variant?: 'default' | 'compact' | 'full';
+}
+
+const { variant = 'default' } = Astro.props;
+---
+
+{variant === 'compact' && (
+  <p class="text-sm text-stone-500 italic">
+    <strong>Disclosure:</strong> This post contains affiliate links. We may earn a commission at no extra cost to you.
+    <a href="/affiliate-disclosure" class="underline hover:text-forest-700">Learn more</a>.
+  </p>
+)}
+
+{variant === 'default' && (
+  <div class="bg-stone-100 border border-stone-200 rounded-lg p-4">
+    <div class="flex items-start gap-3">
+      <div class="flex-shrink-0 mt-0.5">
+        <svg class="w-5 h-5 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <div class="text-sm text-stone-600">
+        <p>
+          <strong class="text-stone-700">Affiliate Disclosure:</strong> ZT1 Prep is reader-supported. When you buy through links on our site, we may earn an affiliate commission at no additional cost to you. This helps us keep creating practical preparedness content.
+          <a href="/affiliate-disclosure" class="text-forest-700 underline hover:text-forest-800">Full disclosure</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+)}
+
+{variant === 'full' && (
+  <div class="bg-forest-50 border border-forest-200 rounded-xl p-6">
+    <div class="flex items-start gap-4">
+      <div class="flex-shrink-0">
+        <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center">
+          <svg class="w-5 h-5 text-forest-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-stone-900 mb-2">How We Recommend Gear</h4>
+        <p class="text-stone-600 text-sm mb-3">
+          ZT1 Prep is reader-supported. When you purchase through our links, we may earn a commission—at no extra cost to you. This supports our mission to provide practical, trustworthy preparedness guidance.
+        </p>
+        <ul class="text-sm text-stone-600 space-y-1">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-forest-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            We never let affiliate relationships influence our recommendations
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-forest-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            We recommend products we'd actually use ourselves
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-forest-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            We're honest about what we've tested vs. researched
+          </li>
+        </ul>
+        <a href="/affiliate-disclosure" class="inline-flex items-center text-sm text-forest-700 font-medium mt-3 hover:text-forest-800">
+          Read our full disclosure
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+)}

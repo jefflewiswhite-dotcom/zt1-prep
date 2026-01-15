@@ -1,0 +1,47 @@
+{
+  "name": "ZT1 Prep",
+  "fullName": "Zero to One Preparedness",
+  "tagline": "Everyday readiness, from zero to one.",
+  "taglineAlt": "Practical preparedness for real life.",
+  "description": "Your trusted guide to practical preparedness. We help everyday Americans build confidence through smart, simple emergency readiness—no fear-mongering, just what works.",
+  "url": "https://zt1prep.com",
+  "author": "ZT1 Prep Team",
+  "email": "hello@zt1prep.com",
+  "social": {
+    "twitter": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": ""
+  },
+  "navigation": [
+    { "label": "Start Here", "href": "/start-here" },
+    { "label": "Guides", "href": "/guides" },
+    { "label": "Gear", "href": "/gear" },
+    { "label": "About", "href": "/about" }
+  ],
+  "footerNavigation": {
+    "guides": [
+      { "label": "Bug Out Bag", "href": "/guides/bug-out-bag" },
+      { "label": "Get Home Bag", "href": "/guides/get-home-bag" },
+      { "label": "72-Hour Kit", "href": "/guides/72-hour-kit" },
+      { "label": "Car Emergency Kit", "href": "/guides/car-emergency-kit" }
+    ],
+    "resources": [
+      { "label": "Power Outage Prep", "href": "/guides/power-outage-preparedness" },
+      { "label": "Water Basics", "href": "/guides/water-storage-purification" },
+      { "label": "First Aid Kit", "href": "/guides/first-aid-kit-basics" },
+      { "label": "All Guides", "href": "/guides" }
+    ],
+    "company": [
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" },
+      { "label": "Affiliate Disclosure", "href": "/affiliate-disclosure" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Use", "href": "/terms" }
+    ]
+  },
+  "seo": {
+    "titleTemplate": "%s | ZT1 Prep",
+    "defaultImage": "/images/og-default.jpg"
+  }
+}
