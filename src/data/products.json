@@ -649,5 +649,467 @@
       "No digital modes"
     ],
     "verifyOnListing": "Ensure genuine Yaesu - counterfeits exist"
+  },
+  {
+    "slug": "goal-zero-lighthouse-600",
+    "name": "Goal Zero Lighthouse 600 Lantern",
+    "category": "lantern",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:goal-zero-lighthouse-600}}",
+    "description": "Rechargeable lantern with hand crank backup, USB charging output, and collapsible legs. The gold standard for emergency lanterns.",
+    "bestFor": ["Power Outages", "Emergency Kit", "Camping"],
+    "pros": [
+      "600 lumens output",
+      "Hand crank backup charging",
+      "USB power bank function",
+      "Collapsible legs for versatile positioning",
+      "48-hour runtime on low"
+    ],
+    "cons": [
+      "Higher price point",
+      "Heavier than compact options",
+      "Crank charging is slow"
+    ],
+    "verifyOnListing": "Check for Lighthouse 600 vs older 400 model"
+  },
+  {
+    "slug": "biolite-alpenglow-500",
+    "name": "BioLite AlpenGlow 500 Lantern",
+    "category": "lantern",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:biolite-alpenglow-500}}",
+    "description": "USB-C rechargeable lantern with 200+ hour runtime on low. Built-in power bank charges devices.",
+    "bestFor": ["Power Outages", "Camping", "Value"],
+    "pros": [
+      "200+ hours on low setting",
+      "USB-C fast charging",
+      "6,400mAh power bank",
+      "Multicolor modes",
+      "Good build quality"
+    ],
+    "cons": [
+      "No hand crank backup",
+      "Color modes unnecessary for emergency",
+      "IPX4 (splash resistant only)"
+    ],
+    "verifyOnListing": "AlpenGlow 500 vs 250 - 500 has larger battery"
+  },
+  {
+    "slug": "streamlight-siege-x",
+    "name": "Streamlight Siege X USB Lantern",
+    "category": "lantern",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:streamlight-siege-x}}",
+    "description": "IPX7 waterproof lantern with magnetic base and red LED mode. Professional-grade durability.",
+    "bestFor": ["Bug Out Bag", "Outdoor Use", "Durability"],
+    "pros": [
+      "IPX7 fully submersible",
+      "Magnetic base mounting",
+      "Red LED preserves night vision",
+      "USB-C rechargeable",
+      "95 hours on low"
+    ],
+    "cons": [
+      "Lower max lumens (325)",
+      "Limited power bank function",
+      "Higher price for size"
+    ],
+    "verifyOnListing": "Siege X (rechargeable) vs original Siege (battery)"
+  },
+  {
+    "slug": "goal-zero-crush-light",
+    "name": "Goal Zero Crush Light Solar Lantern",
+    "category": "lantern",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:goal-zero-crush-light}}",
+    "description": "Inflatable solar-rechargeable lantern. Ultralight and perfect for distributed lighting.",
+    "bestFor": ["Ultralight", "Multiple Rooms", "Solar"],
+    "pros": [
+      "Built-in solar panel",
+      "Only 3.2 oz",
+      "USB rechargeable backup",
+      "Collapsible/packable",
+      "Affordable"
+    ],
+    "cons": [
+      "Only 60 lumens",
+      "Not as bright as larger lanterns",
+      "No power bank function"
+    ],
+    "verifyOnListing": "Multiple sizes available - check lumens"
+  },
+  {
+    "slug": "ecoflow-river-2-pro",
+    "name": "EcoFlow River 2 Pro Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:ecoflow-river-2-pro}}",
+    "description": "768Wh portable power station with fast charging (0-100% in 70 min) and LFP battery chemistry.",
+    "bestFor": ["Home Backup", "Power Outages", "Overall Best"],
+    "pros": [
+      "768Wh capacity",
+      "70-minute full charge",
+      "LFP battery (3000+ cycles)",
+      "X-Boost for high-draw devices",
+      "Phone app monitoring"
+    ],
+    "cons": [
+      "Premium price",
+      "17+ lbs weight",
+      "X-Boost reduces efficiency"
+    ],
+    "verifyOnListing": "River 2 Pro vs River 2 - Pro has larger capacity"
+  },
+  {
+    "slug": "bluetti-eb3a",
+    "name": "Bluetti EB3A Portable Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:bluetti-eb3a}}",
+    "description": "Compact 268Wh power station with 600W output and LFP battery. Great value entry point.",
+    "bestFor": ["Budget", "Small Devices", "Portable"],
+    "pros": [
+      "600W output (impressive for size)",
+      "LFP battery (2500+ cycles)",
+      "Wireless charging pad",
+      "Affordable price",
+      "Fast recharging"
+    ],
+    "cons": [
+      "268Wh limits runtime",
+      "10 lbs still notable",
+      "No expansion option"
+    ],
+    "verifyOnListing": "EB3A is current budget model"
+  },
+  {
+    "slug": "goal-zero-yeti-1000x",
+    "name": "Goal Zero Yeti 1000X Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:goal-zero-yeti-1000x}}",
+    "description": "983Wh power station capable of running refrigerators and power tools. Expandable capacity.",
+    "bestFor": ["Home Backup", "Medical Devices", "Extended Outages"],
+    "pros": [
+      "983Wh capacity",
+      "1500W output (3000W surge)",
+      "Runs full-size refrigerators",
+      "Expandable with extra batteries",
+      "Roll cart available"
+    ],
+    "cons": [
+      "Heavy (31.7 lbs)",
+      "Premium price",
+      "Older NMC battery (500 cycles)"
+    ],
+    "verifyOnListing": "Yeti 1000X vs older Yeti 1000 - X has better ports"
+  },
+  {
+    "slug": "goal-zero-nomad-50",
+    "name": "Goal Zero Nomad 50 Solar Panel",
+    "category": "solar-panel",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:goal-zero-nomad-50}}",
+    "description": "50W portable solar panel designed for Goal Zero power stations. Foldable and durable.",
+    "bestFor": ["Power Station Charging", "Camping", "Emergency Backup"],
+    "pros": [
+      "50W output",
+      "Foldable design",
+      "Durable construction",
+      "Kickstand included",
+      "Compatible with most stations"
+    ],
+    "cons": [
+      "50W is supplemental",
+      "Higher price per watt",
+      "Slower than larger panels"
+    ],
+    "verifyOnListing": "Check compatibility with your power station"
+  },
+  {
+    "slug": "waterBOB",
+    "name": "WaterBOB Emergency Water Container",
+    "category": "water-storage",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:waterbob}}",
+    "description": "100-gallon bathtub water storage bladder. Fill when storms approach for emergency water supply.",
+    "bestFor": ["Hurricane Prep", "Storm Season", "Emergency Water"],
+    "pros": [
+      "100 gallon capacity",
+      "Fits standard bathtubs",
+      "Food-grade material",
+      "Pump included",
+      "Affordable"
+    ],
+    "cons": [
+      "Single use",
+      "Requires advance warning",
+      "Takes up bathtub"
+    ],
+    "verifyOnListing": "WaterBOB (100 gal) vs AquaPod (65 gal)"
+  },
+  {
+    "slug": "water-preserver",
+    "name": "Water Preserver Concentrate",
+    "category": "water-treatment",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:water-preserver}}",
+    "description": "Extends water storage life to 5 years. EPA registered treatment for emergency water supplies.",
+    "bestFor": ["Long-Term Storage", "Emergency Prep", "Set and Forget"],
+    "pros": [
+      "5-year storage extension",
+      "EPA registered",
+      "Easy to use",
+      "Cost effective",
+      "One bottle treats 55 gallons"
+    ],
+    "cons": [
+      "Still recommend rotation",
+      "Adds slight taste",
+      "Must follow directions exactly"
+    ],
+    "verifyOnListing": "One bottle treats 55 gallons"
+  },
+  {
+    "slug": "esee-4",
+    "name": "ESEE 4 Fixed Blade Knife",
+    "category": "knife",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:esee-4}}",
+    "description": "Professional-grade survival knife with unconditional lifetime warranty. Designed by survival instructors.",
+    "bestFor": ["Survival", "Bug Out Bag", "Buy Once Cry Once"],
+    "pros": [
+      "Unconditional lifetime warranty",
+      "Full tang 1095 carbon steel",
+      "Perfect 4.5\" blade length",
+      "Made in USA",
+      "Easy to sharpen"
+    ],
+    "cons": [
+      "Carbon steel requires maintenance",
+      "Premium price",
+      "Coating can wear"
+    ],
+    "verifyOnListing": "ESEE 4 vs ESEE 3 - 4 is slightly larger"
+  },
+  {
+    "slug": "ka-bar-becker-bk2",
+    "name": "KA-BAR Becker BK2 Campanion",
+    "category": "knife",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:ka-bar-becker-bk2}}",
+    "description": "Heavy-duty fixed blade designed for hard use. 0.25\" thick blade handles batoning and chopping.",
+    "bestFor": ["Batoning", "Heavy Camp Work", "Durability"],
+    "pros": [
+      "0.25\" thick blade",
+      "1095 Cro-Van steel",
+      "Full tang construction",
+      "Made in USA",
+      "Excellent for batoning"
+    ],
+    "cons": [
+      "Heavy (1 lb)",
+      "Too thick for fine work",
+      "Basic handle"
+    ],
+    "verifyOnListing": "BK2 Campanion vs other Becker models"
+  },
+  {
+    "slug": "benchmade-bushcrafter",
+    "name": "Benchmade Bushcrafter 162",
+    "category": "knife",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:benchmade-bushcrafter}}",
+    "description": "Premium bushcraft knife with S30V steel and precision craftsmanship. Lifetime warranty.",
+    "bestFor": ["Premium Quality", "Bushcraft", "Collectors"],
+    "pros": [
+      "CPM-S30V steel",
+      "Exceptional fit and finish",
+      "Leather sheath included",
+      "Lifetime warranty",
+      "Perfect blade geometry"
+    ],
+    "cons": [
+      "Premium price ($200+)",
+      "S30V harder to sharpen",
+      "Almost too nice to beat on"
+    ],
+    "verifyOnListing": "Model 162 is the Bushcrafter"
+  },
+  {
+    "slug": "aqua-quest-defender",
+    "name": "Aqua Quest Defender Tarp",
+    "category": "tarp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:aqua-quest-defender}}",
+    "description": "Heavy-duty 10x10 survival tarp with 19 tie-out points and 5000mm waterproof rating.",
+    "bestFor": ["Bug Out Bag", "Serious Survival", "Durability"],
+    "pros": [
+      "19 reinforced tie-outs",
+      "5000mm waterproof",
+      "70D ripstop nylon",
+      "10x10 ft coverage",
+      "Reflective guy lines included"
+    ],
+    "cons": [
+      "26 oz weight",
+      "Overkill for ultralight",
+      "Premium price"
+    ],
+    "verifyOnListing": "Defender (heavy duty) vs Guide (lighter)"
+  },
+  {
+    "slug": "sea-to-summit-ultra-sil",
+    "name": "Sea to Summit Ultra-Sil Nano Tarp",
+    "category": "tarp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:sea-to-summit-ultra-sil}}",
+    "description": "Ultralight 11 oz tarp for weight-conscious preppers. Quality Sea to Summit construction.",
+    "bestFor": ["Ultralight", "Hiking", "Gram Counters"],
+    "pros": [
+      "Only 11 oz",
+      "Packs incredibly small",
+      "Quality construction",
+      "10x8 ft coverage",
+      "Silicone impregnated"
+    ],
+    "cons": [
+      "Delicate 15D material",
+      "Lower waterproof rating",
+      "Only 8 tie-outs"
+    ],
+    "verifyOnListing": "Multiple sizes available"
+  },
+  {
+    "slug": "kelty-noah-tarp",
+    "name": "Kelty Noah's Tarp",
+    "category": "tarp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:kelty-noahs-tarp}}",
+    "description": "Budget-friendly workhorse tarp that's been a staple for decades. Great value for the durability.",
+    "bestFor": ["Budget", "Vehicle Kit", "Beginners"],
+    "pros": [
+      "Very affordable",
+      "Proven durability",
+      "9x9 or 12x12 sizes",
+      "1800mm waterproof",
+      "Established brand"
+    ],
+    "cons": [
+      "28 oz (heavier)",
+      "Only 8 tie-outs",
+      "Basic construction"
+    ],
+    "verifyOnListing": "9x9 vs 12x12 - choose based on needs"
+  },
+  {
+    "slug": "mountain-house-bucket",
+    "name": "Mountain House Classic Bucket",
+    "category": "emergency-food",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:mountain-house-bucket}}",
+    "description": "24 servings of freeze-dried meals with 30-year shelf life. Just add water.",
+    "bestFor": ["Long-Term Storage", "Emergency Food", "Quality"],
+    "pros": [
+      "30-year shelf life",
+      "Excellent taste (for emergency food)",
+      "Just add water",
+      "Variety of meals",
+      "Stackable bucket"
+    ],
+    "cons": [
+      "Expensive per serving",
+      "Requires hot water for best results",
+      "High sodium"
+    ],
+    "verifyOnListing": "Check servings count - varies by bucket"
+  },
+  {
+    "slug": "paracord-550",
+    "name": "Mil-Spec 550 Paracord (100ft)",
+    "category": "cordage",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:550-paracord}}",
+    "description": "Genuine mil-spec Type III paracord with 7 inner strands. 550 lb tensile strength.",
+    "bestFor": ["Bug Out Bag", "Survival", "All Kits"],
+    "pros": [
+      "550 lb strength",
+      "7 inner strands",
+      "Dozens of survival uses",
+      "Lightweight",
+      "Long lasting"
+    ],
+    "cons": [
+      "Quality varies by brand",
+      "Not for climbing",
+      "UV degrades over time"
+    ],
+    "verifyOnListing": "Verify 7 inner strands - cheap versions have fewer"
+  },
+  {
+    "slug": "paracord-bracelet",
+    "name": "Paracord Survival Bracelet",
+    "category": "cordage",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:paracord-bracelet}}",
+    "description": "Wearable paracord that provides 10-20 feet of emergency cordage always on your wrist.",
+    "bestFor": ["EDC", "Always Available", "Gift"],
+    "pros": [
+      "Always with you",
+      "10-20 feet of paracord",
+      "Many styles available",
+      "Conversation starter",
+      "Affordable"
+    ],
+    "cons": [
+      "Takes time to unravel",
+      "Limited length",
+      "May not match style"
+    ],
+    "verifyOnListing": "Check unraveled length - varies by size"
+  },
+  {
+    "slug": "amerex-b500",
+    "name": "Amerex B500 Fire Extinguisher",
+    "category": "fire-safety",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:amerex-b500}}",
+    "description": "Commercial-grade ABC fire extinguisher with metal valve assembly. The gold standard for home protection.",
+    "bestFor": ["Home Safety", "General Use", "Quality"],
+    "pros": [
+      "2A:10B:C rating",
+      "Metal head construction",
+      "6-year warranty",
+      "Commercial grade",
+      "Rechargeable"
+    ],
+    "cons": [
+      "6.3 lbs weight",
+      "Dry chemical cleanup",
+      "Higher price than disposable"
+    ],
+    "verifyOnListing": "B500 is 5lb ABC model"
+  },
+  {
+    "slug": "first-alert-home",
+    "name": "First Alert HOME1 Kitchen Extinguisher",
+    "category": "fire-safety",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:first-alert-home1}}",
+    "description": "Compact BC-rated extinguisher designed for kitchen grease fires. Includes mounting bracket.",
+    "bestFor": ["Kitchen", "Grease Fires", "Budget"],
+    "pros": [
+      "Compact size",
+      "BC rated for grease",
+      "Mounting bracket included",
+      "Affordable",
+      "Easy to use"
+    ],
+    "cons": [
+      "BC only (no Class A)",
+      "2.5 lbs small capacity",
+      "Disposable"
+    ],
+    "verifyOnListing": "HOME1 is kitchen model"
+  },
+  {
+    "slug": "h3r-halon",
+    "name": "H3R Halguard Clean Agent Extinguisher",
+    "category": "fire-safety",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:h3r-halguard}}",
+    "description": "Clean agent fire extinguisher that leaves no residue. Perfect for vehicles and electronics.",
+    "bestFor": ["Vehicle", "Electronics", "No Cleanup"],
+    "pros": [
+      "No residue cleanup",
+      "Safe for electronics",
+      "Compact for vehicles",
+      "Metal construction",
+      "Mounting bracket included"
+    ],
+    "cons": [
+      "BC rated only",
+      "More expensive",
+      "2.5 lbs capacity"
+    ],
+    "verifyOnListing": "Halguard uses Halotron 1 agent"
   }
 ]
