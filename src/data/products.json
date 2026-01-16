@@ -1111,5 +1111,89 @@
       "2.5 lbs capacity"
     ],
     "verifyOnListing": "Halguard uses Halotron 1 agent"
+  },
+  {
+    "slug": "petzl-actik-core",
+    "name": "Petzl Actik Core Headlamp",
+    "category": "headlamp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:petzl-actik-core}}",
+    "description": "Hybrid headlamp with rechargeable battery pack or AAA compatibility. 450 lumens with red light mode.",
+    "bestFor": ["Bug Out Bag", "Home Emergency", "Hybrid Battery"],
+    "pros": [
+      "Hybrid battery system (USB or AAA)",
+      "450 lumens max",
+      "130 hour runtime on low",
+      "Red light mode",
+      "Lightweight (3 oz)"
+    ],
+    "cons": [
+      "Higher price point",
+      "Core battery sold separately sometimes",
+      "IPX4 not submersible"
+    ],
+    "verifyOnListing": "Verify Core battery is included"
+  },
+  {
+    "slug": "black-diamond-spot",
+    "name": "Black Diamond Spot 400 Headlamp",
+    "category": "headlamp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:black-diamond-spot-400}}",
+    "description": "Waterproof headlamp with 400 lumens and 200-hour runtime. IPX8 rated for submersion.",
+    "bestFor": ["Value Pick", "Wet Conditions", "Long Runtime"],
+    "pros": [
+      "IPX8 waterproof (submersible)",
+      "200 hour runtime on low",
+      "400 lumens max",
+      "PowerTap quick brightness",
+      "Proven reliability"
+    ],
+    "cons": [
+      "AAA only (no USB charging built-in)",
+      "Rechargeable pack costs extra",
+      "Slightly heavier"
+    ],
+    "verifyOnListing": "Check for Spot 400 vs older models"
+  },
+  {
+    "slug": "nitecore-nu25",
+    "name": "Nitecore NU25 Ultralight Headlamp",
+    "category": "headlamp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:nitecore-nu25}}",
+    "description": "Ultra-lightweight USB-C rechargeable headlamp at just 1 ounce. Triple LED output.",
+    "bestFor": ["Ultralight", "USB-C Charging", "EDC"],
+    "pros": [
+      "Incredibly light (1.06 oz)",
+      "USB-C fast charging",
+      "Triple LED (white/red/high-CRI)",
+      "400 lumens max",
+      "IP66 water resistant"
+    ],
+    "cons": [
+      "No AAA backup option",
+      "Shorter max runtime",
+      "Small battery capacity"
+    ],
+    "verifyOnListing": "Newer version uses USB-C"
+  },
+  {
+    "slug": "energizer-vision",
+    "name": "Energizer Vision HD+ Headlamp",
+    "category": "headlamp",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:energizer-vision-hd}}",
+    "description": "Budget-friendly headlamp with 350 lumens. Available at most stores, great for multiple kits.",
+    "bestFor": ["Budget", "Multiple Kits", "Easy Availability"],
+    "pros": [
+      "Very affordable",
+      "Available everywhere",
+      "350 lumens max",
+      "50 hour runtime",
+      "Simple operation"
+    ],
+    "cons": [
+      "Basic feature set",
+      "No USB charging",
+      "Heavier than premium options"
+    ],
+    "verifyOnListing": "Check for HD+ version"
   }
 ]
