@@ -27,6 +27,11 @@ const categoryStyles: Record<string, { bg: string; text: string }> = {
   comparisons: { bg: 'bg-slate-100', text: 'text-slate-800' },
   checklists: { bg: 'bg-stone-100', text: 'text-stone-800' },
 };
+
+// Helper to capitalize category for display
+function formatCategory(category: string): string {
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
 ---
 
 <BaseLayout
@@ -214,11 +219,11 @@ const categoryStyles: Record<string, { bg: string; text: string }> = {
               <a href={getPostUrl(post)} class="block p-6">
                 <div class="flex items-center gap-2 mb-3">
                   <span class={`text-xs font-medium px-2 py-1 rounded ${style.bg} ${style.text}`}>
-                    {post.data.category}
+                    {formatCategory(post.data.category)}
                   </span>
                   {post.data.contentType === 'pillar' && (
                     <span class="text-xs font-medium px-2 py-1 rounded bg-forest-100 text-forest-800">
-                      Guide
+                      Pillar
                     </span>
                   )}
                 </div>
