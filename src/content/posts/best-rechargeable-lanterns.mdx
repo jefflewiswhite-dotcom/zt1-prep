@@ -13,7 +13,6 @@ products: ["goal-zero-lighthouse-600", "biolite-alpenglow-500", "streamlight-sie
 
 import Callout from '@/components/Callout.astro';
 import ProductCard from '@/components/ProductCard.astro';
-import ComparisonTable from '@/components/ComparisonTable.astro';
 import FAQ from '@/components/FAQ.astro';
 
 # Best Rechargeable Lanterns for Emergency Preparedness
@@ -124,51 +123,12 @@ The Crush Light is an inflatable, solar-charging lantern that's lightweight and 
 
 ## Comparison Table
 
-<ComparisonTable
-  products={[
-    {
-      name: "Goal Zero Lighthouse 600",
-      price: "$80",
-      lumens: "600",
-      runtime: "48 hrs",
-      charging: "USB, crank, solar",
-      powerBank: "Yes (5,200mAh)",
-      waterproof: "IPX4",
-      bestFor: "Overall best"
-    },
-    {
-      name: "BioLite AlpenGlow 500",
-      price: "$65",
-      lumens: "500",
-      runtime: "200+ hrs",
-      charging: "USB-C",
-      powerBank: "Yes (6,400mAh)",
-      waterproof: "IPX4",
-      bestFor: "Best value"
-    },
-    {
-      name: "Streamlight Siege X",
-      price: "$70",
-      lumens: "325",
-      runtime: "95 hrs",
-      charging: "USB-C",
-      powerBank: "Limited",
-      waterproof: "IPX7",
-      bestFor: "Durability"
-    },
-    {
-      name: "Goal Zero Crush Light",
-      price: "$25",
-      lumens: "60",
-      runtime: "35 hrs",
-      charging: "USB, solar",
-      powerBank: "No",
-      waterproof: "IPX4",
-      bestFor: "Budget/portable"
-    }
-  ]}
-  columns={["name", "price", "lumens", "runtime", "charging", "powerBank", "waterproof", "bestFor"]}
-/>
+| Lantern | Price | Lumens | Runtime | Charging | Power Bank | Waterproof | Best For |
+|---------|-------|--------|---------|----------|------------|------------|----------|
+| Goal Zero Lighthouse 600 | $80 | 600 | 48 hrs | USB, crank, solar | Yes (5,200mAh) | IPX4 | Overall best |
+| BioLite AlpenGlow 500 | $65 | 500 | 200+ hrs | USB-C | Yes (6,400mAh) | IPX4 | Best value |
+| Streamlight Siege X | $70 | 325 | 95 hrs | USB-C | Limited | IPX7 | Durability |
+| Goal Zero Crush Light | $25 | 60 | 35 hrs | USB, solar | No | IPX4 | Budget/portable |
 
 ## Rechargeable vs. Battery-Powered
 

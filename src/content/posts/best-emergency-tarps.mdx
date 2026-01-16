@@ -13,7 +13,6 @@ products: ["sol-emergency-bivvy", "aqua-quest-defender", "kelty-noah-tarp", "sea
 
 import Callout from '@/components/Callout.astro';
 import ProductCard from '@/components/ProductCard.astro';
-import ComparisonTable from '@/components/ComparisonTable.astro';
 import FAQ from '@/components/FAQ.astro';
 
 # Best Emergency Tarps and Shelter for Survival
@@ -163,43 +162,12 @@ The Kelty Noah's Tarp has been a staple for decades. It's heavier than specializ
 
 ## Comparison Table
 
-<ComparisonTable
-  products={[
-    {
-      name: "SOL Emergency Bivvy",
-      price: "$20",
-      weight: "3.8 oz",
-      size: "84\" × 36\"",
-      waterproof: "Yes",
-      bestFor: "Emergency backup"
-    },
-    {
-      name: "Aqua Quest Defender",
-      price: "$80",
-      weight: "26 oz",
-      size: "10 × 10 ft",
-      waterproof: "5000mm",
-      bestFor: "Best overall"
-    },
-    {
-      name: "Sea to Summit Ultra-Sil",
-      price: "$90",
-      weight: "11 oz",
-      size: "10 × 8 ft",
-      waterproof: "1200mm",
-      bestFor: "Ultralight"
-    },
-    {
-      name: "Kelty Noah's Tarp",
-      price: "$50",
-      weight: "28 oz",
-      size: "9 × 9 ft",
-      waterproof: "1800mm",
-      bestFor: "Budget"
-    }
-  ]}
-  columns={["name", "price", "weight", "size", "waterproof", "bestFor"]}
-/>
+| Product | Price | Weight | Size | Waterproof | Best For |
+|---------|-------|--------|------|------------|----------|
+| SOL Emergency Bivvy | $20 | 3.8 oz | 84" × 36" | Yes | Emergency backup |
+| Aqua Quest Defender | $80 | 26 oz | 10 × 10 ft | 5000mm | Best overall |
+| Sea to Summit Ultra-Sil | $90 | 11 oz | 10 × 8 ft | 1200mm | Ultralight |
+| Kelty Noah's Tarp | $50 | 28 oz | 9 × 9 ft | 1800mm | Budget |
 
 ## Tarp Setup Configurations
 

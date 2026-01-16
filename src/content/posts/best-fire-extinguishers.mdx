@@ -13,7 +13,6 @@ products: ["amerex-b500", "first-alert-home", "h3r-halon"]
 
 import Callout from '@/components/Callout.astro';
 import ProductCard from '@/components/ProductCard.astro';
-import ComparisonTable from '@/components/ComparisonTable.astro';
 import FAQ from '@/components/FAQ.astro';
 
 # Best Fire Extinguishers for Home and Vehicle Emergency Kits
@@ -204,43 +203,12 @@ Clean agent extinguisher that won't damage your vehicle's interior or electronic
 
 ## Comparison Table
 
-<ComparisonTable
-  products={[
-    {
-      name: "Amerex B500",
-      price: "$55-70",
-      rating: "2A:10B:C",
-      weight: "6.3 lbs",
-      type: "Dry Chemical",
-      bestFor: "General home"
-    },
-    {
-      name: "First Alert HOME1",
-      price: "$20-30",
-      rating: "5B:C",
-      weight: "2.5 lbs",
-      type: "Dry Chemical",
-      bestFor: "Kitchen"
-    },
-    {
-      name: "H3R Halguard",
-      price: "$70-90",
-      rating: "5B:C",
-      weight: "2.5 lbs",
-      type: "Clean Agent",
-      bestFor: "Vehicle"
-    },
-    {
-      name: "Amerex B456",
-      price: "$80-100",
-      rating: "3A:40B:C",
-      weight: "10 lbs",
-      type: "Dry Chemical",
-      bestFor: "Garage/Workshop"
-    }
-  ]}
-  columns={["name", "price", "rating", "weight", "type", "bestFor"]}
-/>
+| Model | Price | Rating | Weight | Type | Best For |
+|-------|-------|--------|--------|------|----------|
+| Amerex B500 | $55-70 | 2A:10B:C | 6.3 lbs | Dry Chemical | General home |
+| First Alert HOME1 | $20-30 | 5B:C | 2.5 lbs | Dry Chemical | Kitchen |
+| H3R Halguard | $70-90 | 5B:C | 2.5 lbs | Clean Agent | Vehicle |
+| Amerex B456 | $80-100 | 3A:40B:C | 10 lbs | Dry Chemical | Garage/Workshop |
 
 ## Where to Place Fire Extinguishers
 
