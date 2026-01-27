@@ -1195,5 +1195,614 @@
       "Heavier than premium options"
     ],
     "verifyOnListing": "Check for HD+ version"
+  },
+  {
+    "slug": "honda-eu2200i",
+    "name": "Honda EU2200i Inverter Generator",
+    "category": "generator",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:honda-eu2200i}}",
+    "description": "The gold standard for portable inverter generators. Whisper-quiet, fuel-efficient, and legendary reliability.",
+    "bestFor": ["Home Backup", "Quiet Operation", "Premium Quality"],
+    "pros": [
+      "Legendary Honda reliability",
+      "Very quiet (48-57 dB)",
+      "Excellent fuel efficiency",
+      "Clean power for electronics",
+      "Parallel capable"
+    ],
+    "cons": [
+      "Premium price point",
+      "May need two for large loads",
+      "No electric start"
+    ],
+    "verifyOnListing": "EU2200i is current model - older EU2000i discontinued"
+  },
+  {
+    "slug": "champion-3400",
+    "name": "Champion 3400W Dual Fuel Inverter Generator",
+    "category": "generator",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:champion-3400}}",
+    "description": "Excellent value dual fuel generator. Runs on gas or propane with electric start.",
+    "bestFor": ["Best Value", "Dual Fuel", "Home Backup"],
+    "pros": [
+      "Runs on gas or propane",
+      "Electric start",
+      "Great price-to-performance",
+      "More power than most 2000W units",
+      "Good warranty support"
+    ],
+    "cons": [
+      "Heavier than smaller inverters",
+      "Louder than Honda",
+      "Propane mode has less power"
+    ],
+    "verifyOnListing": "Model 200986 is dual fuel version"
+  },
+  {
+    "slug": "westinghouse-igen4500",
+    "name": "Westinghouse iGen4500 Inverter Generator",
+    "category": "generator",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:westinghouse-igen4500}}",
+    "description": "High-capacity inverter generator with remote start capability. Powers larger loads.",
+    "bestFor": ["Large Capacity", "RV Ready", "Remote Start"],
+    "pros": [
+      "3700W running / 4500W peak",
+      "Remote start option",
+      "18 hour runtime",
+      "RV-ready outlet",
+      "LED data center display"
+    ],
+    "cons": [
+      "Heavy (98 lbs)",
+      "Large fuel tank to fill",
+      "Higher fuel consumption"
+    ],
+    "verifyOnListing": "iGen4500 vs iGen4500DF (dual fuel)"
+  },
+  {
+    "slug": "predator-3500",
+    "name": "Predator 3500 Super Quiet Inverter Generator",
+    "category": "generator",
+    "affiliateUrl": "{{AFFILIATE_URL:harborfreight:predator-3500}}",
+    "description": "Harbor Freight's budget inverter generator with solid performance at aggressive pricing.",
+    "bestFor": ["Budget Pick", "Value", "Availability"],
+    "pros": [
+      "Excellent price",
+      "Good power output",
+      "Electric start",
+      "Readily available at Harbor Freight",
+      "CO secure shutoff on newer models"
+    ],
+    "cons": [
+      "Mixed reliability reports",
+      "Heavier than premium brands",
+      "Shorter warranty"
+    ],
+    "verifyOnListing": "Buy in-store at Harbor Freight for best price"
+  },
+  {
+    "slug": "mr-heater-buddy",
+    "name": "Mr. Heater Portable Buddy",
+    "category": "propane-heater",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:mr-heater-buddy}}",
+    "description": "The most popular indoor-safe propane heater. Perfect size for emergency room heating.",
+    "bestFor": ["Emergency Heat", "Indoor Safe", "Compact"],
+    "pros": [
+      "Indoor safe with ODS",
+      "4,000-9,000 BTU",
+      "Works with 1-lb or 20-lb tanks",
+      "Time-tested reliability",
+      "Fold-down handle"
+    ],
+    "cons": [
+      "No fan (convection only)",
+      "Requires ventilation",
+      "Need CO detector"
+    ],
+    "verifyOnListing": "Get adapter hose for 20-lb tank use"
+  },
+  {
+    "slug": "mr-heater-big-buddy",
+    "name": "Mr. Heater Big Buddy",
+    "category": "propane-heater",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:mr-heater-big-buddy}}",
+    "description": "Larger propane heater with built-in fan. Heats up to 450 sq ft.",
+    "bestFor": ["Larger Spaces", "Family Use", "Extended Outages"],
+    "pros": [
+      "4,000-18,000 BTU (3 settings)",
+      "Built-in fan for distribution",
+      "Heats up to 450 sq ft",
+      "ODS safety shutoff",
+      "Connects to bulk tank"
+    ],
+    "cons": [
+      "Larger and heavier",
+      "Fan requires batteries",
+      "Uses two 1-lb cylinders on high"
+    ],
+    "verifyOnListing": "Requires 4 D batteries for fan"
+  },
+  {
+    "slug": "mr-heater-little-buddy",
+    "name": "Mr. Heater Little Buddy",
+    "category": "propane-heater",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:mr-heater-little-buddy}}",
+    "description": "Ultra-portable indoor-safe heater. Perfect for personal warmth in small spaces.",
+    "bestFor": ["Personal Heat", "Ultralight", "Camping"],
+    "pros": [
+      "Only 5.85 lbs",
+      "Simple single-setting operation",
+      "5.5 hours per 1-lb cylinder",
+      "Indoor safe with ODS",
+      "Affordable"
+    ],
+    "cons": [
+      "Single heat setting only",
+      "Limited heating capacity",
+      "Can't connect to bulk tank"
+    ],
+    "verifyOnListing": "Little Buddy vs Buddy - Little is smaller"
+  },
+  {
+    "slug": "dyna-glo-rmc-fa60dgd",
+    "name": "Dyna-Glo 60K BTU Forced Air Heater",
+    "category": "propane-heater",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:dyna-glo-60k}}",
+    "description": "High-output forced air propane heater for garages and large spaces.",
+    "bestFor": ["Garages", "Workshops", "High Output"],
+    "pros": [
+      "30,000-60,000 BTU adjustable",
+      "Heats up to 1,350 sq ft",
+      "Forced air spreads heat quickly",
+      "Connects to 20-lb tank",
+      "Variable heat control"
+    ],
+    "cons": [
+      "Requires electricity for fan",
+      "Not for small sealed rooms",
+      "Higher fuel consumption"
+    ],
+    "verifyOnListing": "Requires adequate ventilation"
+  },
+  {
+    "slug": "hothands-hand-warmers",
+    "name": "HotHands Hand Warmers",
+    "category": "hand-warmers",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:hothands-hand-warmers}}",
+    "description": "The gold standard for disposable hand warmers. 10-hour heat, incredibly reliable.",
+    "bestFor": ["Emergency Kits", "Bulk Storage", "Reliability"],
+    "pros": [
+      "Up to 10 hours of heat",
+      "135°F average temperature",
+      "4+ year shelf life",
+      "Reliable activation",
+      "Available everywhere"
+    ],
+    "cons": [
+      "Single use only",
+      "Creates waste",
+      "Can't turn off once activated"
+    ],
+    "verifyOnListing": "Buy in bulk for best value"
+  },
+  {
+    "slug": "zippo-hand-warmer",
+    "name": "Zippo 12-Hour Hand Warmer",
+    "category": "hand-warmers",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:zippo-hand-warmer}}",
+    "description": "Refillable hand warmer using lighter fluid. Long runtime with no waste.",
+    "bestFor": ["Reusable", "Regular Outdoor Use", "Sustainable"],
+    "pros": [
+      "Up to 12 hours runtime",
+      "Refillable with lighter fluid",
+      "Consistent comfortable heat",
+      "Durable metal construction",
+      "Can partially fill for shorter use"
+    ],
+    "cons": [
+      "Requires lighter fluid on hand",
+      "Slight fuel odor",
+      "Takes time to ignite"
+    ],
+    "verifyOnListing": "Use Zippo or Ronsonol lighter fluid"
+  },
+  {
+    "slug": "ocoopa-rechargeable",
+    "name": "Ocoopa Union 5s Rechargeable Hand Warmer",
+    "category": "hand-warmers",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:ocoopa-hand-warmer}}",
+    "description": "Modern rechargeable hand warmer that doubles as a power bank.",
+    "bestFor": ["Daily Use", "Power Bank", "Adjustable Heat"],
+    "pros": [
+      "4-8 hours runtime",
+      "3 heat settings",
+      "10,000mAh power bank",
+      "Magnetic split design",
+      "Quick 3-second heating"
+    ],
+    "cons": [
+      "Requires charging",
+      "Heavier than disposables",
+      "Battery degrades over time"
+    ],
+    "verifyOnListing": "Union 5s is magnetic split version"
+  },
+  {
+    "slug": "grabber-mega-warmers",
+    "name": "Grabber Mega Body Warmers",
+    "category": "hand-warmers",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:grabber-mega-warmers}}",
+    "description": "Large body warmers with adhesive backing. Warms core body temperature.",
+    "bestFor": ["Body Core", "Sleeping", "Large Coverage"],
+    "pros": [
+      "Up to 12 hours of heat",
+      "Large 5x8 inch size",
+      "Adhesive backing",
+      "Warms core temperature",
+      "Great for sleeping bags"
+    ],
+    "cons": [
+      "Too large for pockets",
+      "Single use",
+      "Adhesive can fail"
+    ],
+    "verifyOnListing": "Mega vs regular - Mega is larger"
+  },
+  {
+    "slug": "hothands-toe-warmers",
+    "name": "HotHands Toe Warmers",
+    "category": "hand-warmers",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:hothands-toe-warmers}}",
+    "description": "Thin adhesive toe warmers designed to fit inside boots and shoes.",
+    "bestFor": ["Feet", "Boots", "Frostbite Prevention"],
+    "pros": [
+      "Up to 8 hours of heat",
+      "Thin design fits in boots",
+      "Adhesive keeps them in place",
+      "100°F safe temperature",
+      "Prevent frostbite"
+    ],
+    "cons": [
+      "Single use",
+      "Can feel too hot in tight boots",
+      "Adhesive may not stick to all socks"
+    ],
+    "verifyOnListing": "Stick to top of sock, not bottom"
+  },
+  {
+    "slug": "noco-boost-plus",
+    "name": "NOCO Boost Plus GB40 Jump Starter",
+    "category": "jump-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:noco-boost-plus}}",
+    "description": "Professional-grade lithium jump starter. Works in extreme cold, spark-proof.",
+    "bestFor": ["Best Overall", "Cold Weather", "Reliability"],
+    "pros": [
+      "1,000 peak amps",
+      "Works to -4°F",
+      "Spark-proof technology",
+      "7 safety features",
+      "USB ports for charging"
+    ],
+    "cons": [
+      "Premium price",
+      "May struggle with very large engines",
+      "Needs periodic recharging"
+    ],
+    "verifyOnListing": "GB40 is 1000A - larger models available"
+  },
+  {
+    "slug": "noco-boost-x",
+    "name": "NOCO Boost X GBX55 Jump Starter",
+    "category": "jump-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:noco-boost-x}}",
+    "description": "High-power lithium jump starter with 1750 peak amps. Handles trucks and diesels.",
+    "bestFor": ["Trucks", "Diesel", "Maximum Power"],
+    "pros": [
+      "1,750 peak amps",
+      "USB-C fast charging",
+      "Handles trucks and diesels",
+      "Works to -4°F",
+      "Digital battery display"
+    ],
+    "cons": [
+      "Premium price",
+      "Overkill for smaller vehicles",
+      "Larger than GB40"
+    ],
+    "verifyOnListing": "GBX55 is 1750A model"
+  },
+  {
+    "slug": "hulkman-alpha-85",
+    "name": "HULKMAN Alpha 85 Jump Starter",
+    "category": "jump-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:hulkman-alpha-85}}",
+    "description": "High-power jump starter with excellent value. 2000 peak amps at mid-range price.",
+    "bestFor": ["Best Value", "High Power", "Budget-Conscious"],
+    "pros": [
+      "2,000 peak amps",
+      "20,000mAh power bank",
+      "LCD display",
+      "Works to -4°F",
+      "Great price-to-power ratio"
+    ],
+    "cons": [
+      "Less proven than NOCO",
+      "Slightly larger",
+      "Some quality variance reported"
+    ],
+    "verifyOnListing": "Alpha 85 is 2000A model"
+  },
+  {
+    "slug": "schumacher-sl1397",
+    "name": "Schumacher SL1397 Jump Starter + Air Compressor",
+    "category": "jump-starter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:schumacher-sl1397}}",
+    "description": "Jump starter with built-in tire inflator. Two tools in one for roadside emergencies.",
+    "bestFor": ["Dual Purpose", "Flat Tires", "Complete Solution"],
+    "pros": [
+      "1,200 peak amps",
+      "Built-in 150 PSI air compressor",
+      "Established brand",
+      "Digital display",
+      "Rugged build quality"
+    ],
+    "cons": [
+      "Heavier due to compressor",
+      "More components to fail",
+      "Moderate jump power"
+    ],
+    "verifyOnListing": "SL1397 has air compressor built in"
+  },
+  {
+    "slug": "security-chain-super-z6",
+    "name": "Security Chain Super Z6 Cable Chains",
+    "category": "tire-chains",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:super-z6}}",
+    "description": "Z-pattern cable chains with excellent traction and low clearance requirements.",
+    "bestFor": ["Best Overall", "Low Clearance", "Most Vehicles"],
+    "pros": [
+      "Works on low clearance vehicles",
+      "Z-pattern aggressive traction",
+      "Easier install than chains",
+      "Built-in rubber tensioners",
+      "Durable construction"
+    ],
+    "cons": [
+      "Still requires practice",
+      "Higher price than basic cables",
+      "Need to check fit periodically"
+    ],
+    "verifyOnListing": "Match exact tire size from sidewall"
+  },
+  {
+    "slug": "konig-xg-12-pro",
+    "name": "König XG-12 Pro Self-Tensioning Chains",
+    "category": "tire-chains",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:konig-xg-12}}",
+    "description": "Premium self-tensioning chains from Europe. Install and forget.",
+    "bestFor": ["Easiest Install", "Premium Quality", "Frequent Use"],
+    "pros": [
+      "Automatic tensioning",
+      "Extremely low clearance (12mm)",
+      "Premium European engineering",
+      "Very smooth ride",
+      "Quick mounting"
+    ],
+    "cons": [
+      "Premium price",
+      "May not fit all wheels",
+      "Overkill for occasional use"
+    ],
+    "verifyOnListing": "Check wheel clearance compatibility"
+  },
+  {
+    "slug": "peerless-auto-trac",
+    "name": "Peerless Auto-Trac Light Truck Chains",
+    "category": "tire-chains",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:peerless-auto-trac}}",
+    "description": "Self-tightening traditional chains for trucks and SUVs. Maximum traction.",
+    "bestFor": ["Trucks", "SUVs", "Maximum Traction"],
+    "pros": [
+      "Traditional chain traction",
+      "Self-tightening system",
+      "Handles heavy vehicles",
+      "Very durable",
+      "Good for frequent use"
+    ],
+    "cons": [
+      "Requires more clearance",
+      "Heavier to handle",
+      "Rougher ride than cables"
+    ],
+    "verifyOnListing": "Match tire size exactly"
+  },
+  {
+    "slug": "trac-grabber",
+    "name": "Trac-Grabber Emergency Traction Device",
+    "category": "tire-chains",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:trac-grabber}}",
+    "description": "Emergency recovery straps that wrap around tires. Gets you unstuck from snow, mud, sand.",
+    "bestFor": ["Emergency Recovery", "Getting Unstuck", "Backup"],
+    "pros": [
+      "Works for any tire size",
+      "No chain installation",
+      "Gets you out of stuck situations",
+      "Small and easy to store",
+      "Works in snow, mud, sand"
+    ],
+    "cons": [
+      "Not for driving - recovery only",
+      "Limited to forward/backward motion",
+      "Not a replacement for chains"
+    ],
+    "verifyOnListing": "Buy set of 2 minimum"
+  },
+  {
+    "slug": "teton-sports-mammoth",
+    "name": "TETON Sports Mammoth Double Sleeping Bag",
+    "category": "sleeping-bag",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:teton-mammoth}}",
+    "description": "Massive double-wide sleeping bag for families. 0°F rated, zips apart into two bags.",
+    "bestFor": ["Families", "Couples", "Home Emergency"],
+    "pros": [
+      "0°F comfort rating",
+      "Fits two adults easily",
+      "Zips into two separate bags",
+      "Fits queen air mattress",
+      "Soft taffeta shell"
+    ],
+    "cons": [
+      "Very heavy (14 lbs)",
+      "Large packed size",
+      "Too big for one person"
+    ],
+    "verifyOnListing": "Mammoth vs regular TETON doubles"
+  },
+  {
+    "slug": "kelty-cosmic-20",
+    "name": "Kelty Cosmic 20 Down Sleeping Bag",
+    "category": "sleeping-bag",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:kelty-cosmic-20}}",
+    "description": "High-quality mummy bag with 600-fill DriDown. EN tested 20°F rating.",
+    "bestFor": ["Solo Use", "Weight Conscious", "Vehicle Kit"],
+    "pros": [
+      "EN tested temperature rating",
+      "600-fill DriDown",
+      "Compresses small",
+      "Natural footbox",
+      "Excellent warmth-to-weight"
+    ],
+    "cons": [
+      "Mummy shape restrictive",
+      "Down loses warmth if soaked",
+      "Single person only"
+    ],
+    "verifyOnListing": "Cosmic 20 is 20°F rated"
+  },
+  {
+    "slug": "marmot-trestles-15",
+    "name": "Marmot Trestles 15 Synthetic Sleeping Bag",
+    "category": "sleeping-bag",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:marmot-trestles-15}}",
+    "description": "EN tested synthetic sleeping bag. Works when damp, excellent value.",
+    "bestFor": ["Best Value", "Synthetic", "Wet Conditions"],
+    "pros": [
+      "EN tested 15°F rating",
+      "SpiraFil synthetic insulation",
+      "Works when damp",
+      "Full-length two-way zipper",
+      "Wave construction prevents cold spots"
+    ],
+    "cons": [
+      "Heavier than down",
+      "Larger packed size",
+      "Semi-rectangular shape"
+    ],
+    "verifyOnListing": "Trestles 15 vs 30 - 15 is warmer"
+  },
+  {
+    "slug": "coleman-north-rim",
+    "name": "Coleman North Rim 0°F Sleeping Bag",
+    "category": "sleeping-bag",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:coleman-north-rim}}",
+    "description": "Budget-friendly 0°F sleeping bag. Great value for home emergency storage.",
+    "bestFor": ["Budget", "Home Storage", "Multiple Kits"],
+    "pros": [
+      "0°F temperature rating",
+      "Very affordable",
+      "Fleece-lined foot zone",
+      "Can zip two together",
+      "Good for larger body types"
+    ],
+    "cons": [
+      "Heavier and bulkier",
+      "Temperature rating optimistic",
+      "Less durable than premium"
+    ],
+    "verifyOnListing": "North Rim vs other Coleman models"
+  },
+  {
+    "slug": "emergency-bivvy-heavy-duty",
+    "name": "Heavy Duty Emergency Bivvy",
+    "category": "emergency-shelter",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:emergency-bivvy-hd}}",
+    "description": "Reflective emergency bivvy that boosts sleeping bag warmth by 10-20°F.",
+    "bestFor": ["Emergency Backup", "Sleeping Bag Liner", "Compact"],
+    "pros": [
+      "Adds 10-20°F to any bag",
+      "Pocket-sized when packed",
+      "Reflects 90% body heat",
+      "Waterproof outer layer",
+      "Affordable"
+    ],
+    "cons": [
+      "Not comfortable alone",
+      "Creates condensation",
+      "Noisy crinkly material"
+    ],
+    "verifyOnListing": "Heavy duty vs regular bivvy"
+  },
+  {
+    "slug": "jackery-explorer-1000",
+    "name": "Jackery Explorer 1000 Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:jackery-explorer-1000}}",
+    "description": "1002Wh portable power station. Reliable, well-built, powers essentials for hours.",
+    "bestFor": ["Home Backup", "Reliability", "Established Brand"],
+    "pros": [
+      "1002Wh capacity",
+      "1000W continuous output",
+      "Pure sine wave AC",
+      "Multiple output ports",
+      "Solar panel compatible"
+    ],
+    "cons": [
+      "Heavy (22 lbs)",
+      "Won't run high-draw heaters long",
+      "Solar panels sold separately"
+    ],
+    "verifyOnListing": "Explorer 1000 vs 1000 Plus (newer)"
+  },
+  {
+    "slug": "ecoflow-delta-2",
+    "name": "EcoFlow DELTA 2 Power Station",
+    "category": "power-station",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:ecoflow-delta-2}}",
+    "description": "1024Wh power station with fast charging and expandable capacity. LFP battery.",
+    "bestFor": ["Fast Charging", "Expandable", "Long Lifespan"],
+    "pros": [
+      "1024Wh capacity",
+      "0-80% charge in 50 minutes",
+      "LFP battery (3000+ cycles)",
+      "Expandable to 3kWh",
+      "X-Boost for high-draw devices"
+    ],
+    "cons": [
+      "Premium price",
+      "27 lbs weight",
+      "X-Boost reduces efficiency"
+    ],
+    "verifyOnListing": "DELTA 2 vs DELTA 2 Max (larger)"
+  },
+  {
+    "slug": "snow-joe-shovel",
+    "name": "Snow Joe SHOVELUTION Snow Shovel",
+    "category": "winter-gear",
+    "affiliateUrl": "{{AFFILIATE_URL:amazon:snow-joe-shovel}}",
+    "description": "Strain-reducing snow shovel with spring-assisted handle. Easier on your back.",
+    "bestFor": ["Snow Removal", "Back Protection", "Ergonomic"],
+    "pros": [
+      "Spring-assist reduces strain",
+      "Ergonomic design",
+      "18-inch wide blade",
+      "Durable construction",
+      "Reduces back fatigue"
+    ],
+    "cons": [
+      "More expensive than basic shovels",
+      "Spring mechanism can fail",
+      "Heavier than simple shovels"
+    ],
+    "verifyOnListing": "SHOVELUTION is spring-assist model"
   }
 ]
