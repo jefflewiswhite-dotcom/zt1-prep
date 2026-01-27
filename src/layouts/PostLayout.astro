@@ -15,7 +15,7 @@ interface Props {
     category: string;
     tags: string[];
     hasAffiliateLinks?: boolean;
-    image?: { src: string };
+    image?: { src: string; alt?: string };
   };
   slug: string;
   headings?: { depth: number; slug: string; text: string }[];
@@ -71,6 +71,20 @@ const jsonLd = {
         ]}
       />
     </div>
+
+    <!-- Featured Image -->
+    {image?.src && (
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <div class="aspect-[21/9] rounded-xl overflow-hidden bg-stone-200">
+          <img
+            src={image.src}
+            alt={image.alt || title}
+            class="w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+    )}
 
     <!-- Header -->
     <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
