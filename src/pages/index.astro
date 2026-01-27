@@ -38,10 +38,22 @@ function formatCategory(category: string): string {
   title={siteData.name}
   description={siteData.description}
 >
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-stone-900 to-stone-800 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-      <div class="max-w-3xl">
+  <!-- Hero Section with Image -->
+  <section class="relative bg-stone-900 text-white overflow-hidden">
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0">
+      <img
+        src="/images/hero-bug-out-bag.png"
+        alt="Emergency preparedness gear laid out"
+        class="w-full h-full object-cover opacity-40"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-stone-900/60"></div>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28">
+      <div class="max-w-2xl">
+        <p class="text-forest-400 font-semibold mb-3 uppercase tracking-wide text-sm">Emergency Preparedness</p>
         <h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-6">
           {siteData.tagline}
         </h1>
@@ -72,73 +84,134 @@ function formatCategory(category: string): string {
   <!-- Featured Hubs -->
   <section class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl font-bold text-stone-900 mb-8">Start Your Preparedness Journey</h2>
+      <h2 class="text-3xl font-bold text-stone-900 mb-2">Start Your Preparedness Journey</h2>
+      <p class="text-stone-600 mb-8">Choose a category to explore essential guides and gear recommendations.</p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Bug Out Bag Hub -->
-        <a href="/guides/bug-out-bag/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-forest-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-forest-200 transition-colors">
-            <svg class="w-6 h-6 text-forest-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-            </svg>
+        <a href="/guides/bug-out-bag/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-bug-out-bag.png"
+            alt="Bug out bag emergency kit"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-forest-900 group-hover:via-forest-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-forest-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Bug Out Bag</h3>
+            <p class="text-stone-200 text-sm">Build a 72-hour emergency kit for when you need to leave quickly.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-forest-700 transition-colors">Bug Out Bag</h3>
-          <p class="text-stone-600">Build a 72-hour emergency kit for when you need to leave quickly.</p>
         </a>
 
         <!-- 72-Hour Kit -->
-        <a href="/guides/72-hour-kit/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-rust-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-rust-200 transition-colors">
-            <svg class="w-6 h-6 text-rust-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        <a href="/guides/72-hour-kit/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-72-hour-kit.png"
+            alt="72-hour emergency kit supplies"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-rust-900 group-hover:via-rust-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-rust-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">72-Hour Kit</h3>
+            <p class="text-stone-200 text-sm">Complete evacuation kit for disasters and emergencies.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-rust-700 transition-colors">72-Hour Kit</h3>
-          <p class="text-stone-600">Complete evacuation kit for disasters and emergencies.</p>
         </a>
 
         <!-- Vehicle Emergency Kit -->
-        <a href="/guides/vehicle-emergency-kit/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-slate-200 transition-colors">
-            <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-            </svg>
+        <a href="/guides/vehicle-emergency-kit/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-vehicle-kit.png"
+            alt="Vehicle emergency kit gear"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-slate-900 group-hover:via-slate-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-slate-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Vehicle Kit</h3>
+            <p class="text-stone-200 text-sm">Essential gear for car breakdowns and roadside emergencies.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-slate-700 transition-colors">Vehicle Kit</h3>
-          <p class="text-stone-600">Essential gear for car breakdowns, accidents, and roadside emergencies.</p>
         </a>
 
         <!-- Water Storage -->
-        <a href="/guides/home-water-storage/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
-            <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-            </svg>
+        <a href="/guides/home-water-storage/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-water-storage.png"
+            alt="Home water storage containers"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-blue-900 group-hover:via-blue-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-blue-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Water Storage</h3>
+            <p class="text-stone-200 text-sm">Store water at home for emergencies and power outages.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-blue-700 transition-colors">Water Storage</h3>
-          <p class="text-stone-600">Store water at home for emergencies and power outages.</p>
         </a>
 
         <!-- Power & Solar -->
-        <a href="/gear/best-portable-power-stations/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-200 transition-colors">
-            <svg class="w-6 h-6 text-amber-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
+        <a href="/gear/best-portable-power-stations/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-portable-power.png"
+            alt="Portable power station"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-amber-900 group-hover:via-amber-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-amber-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Portable Power</h3>
+            <p class="text-stone-200 text-sm">Power stations and solar panels for blackouts.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-amber-700 transition-colors">Portable Power</h3>
-          <p class="text-stone-600">Power stations and solar panels for blackouts and emergencies.</p>
         </a>
 
         <!-- Food Storage -->
-        <a href="/guides/long-term-food-storage/" class="group block p-6 bg-stone-50 rounded-xl hover:bg-stone-100 transition-colors border border-stone-200">
-          <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-200 transition-colors">
-            <svg class="w-6 h-6 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-            </svg>
+        <a href="/guides/long-term-food-storage/" class="group relative block rounded-xl overflow-hidden h-52">
+          <img
+            src="/images/hub-food-storage.png"
+            alt="Long-term food storage supplies"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-stone-900/20 group-hover:from-emerald-900 group-hover:via-emerald-900/60 transition-colors"></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <div class="w-10 h-10 bg-emerald-500/90 rounded-lg flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-1">Food Storage</h3>
+            <p class="text-stone-200 text-sm">Build a long-term food pantry for emergencies.</p>
           </div>
-          <h3 class="text-xl font-semibold text-stone-900 mb-2 group-hover:text-emerald-700 transition-colors">Food Storage</h3>
-          <p class="text-stone-600">Build a long-term food pantry for emergencies and disruptions.</p>
         </a>
       </div>
     </div>
@@ -214,25 +287,39 @@ function formatCategory(category: string): string {
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {recentPosts.map((post) => {
           const style = categoryStyles[post.data.category] || categoryStyles.guides;
+          const imageSrc = post.data.image?.src || `/images/placeholder-${post.data.category}.png`;
+          const imageAlt = post.data.image?.alt || post.data.title;
           return (
-            <article class="bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow">
-              <a href={getPostUrl(post)} class="block p-6">
-                <div class="flex items-center gap-2 mb-3">
-                  <span class={`text-xs font-medium px-2 py-1 rounded ${style.bg} ${style.text}`}>
-                    {formatCategory(post.data.category)}
-                  </span>
-                  {post.data.contentType === 'pillar' && (
-                    <span class="text-xs font-medium px-2 py-1 rounded bg-forest-100 text-forest-800">
-                      Pillar
-                    </span>
-                  )}
+            <article class="bg-white rounded-xl border border-stone-200 overflow-hidden hover:shadow-lg transition-shadow group">
+              <a href={getPostUrl(post)} class="block">
+                <!-- Article Thumbnail -->
+                <div class="aspect-[16/9] overflow-hidden bg-stone-200">
+                  <img
+                    src={imageSrc}
+                    alt={imageAlt}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    onerror="this.src='/images/placeholder-default.png'"
+                  />
                 </div>
-                <h3 class="text-lg font-semibold text-stone-900 mb-2 hover:text-forest-700 transition-colors">
-                  {post.data.title}
-                </h3>
-                <p class="text-stone-600 text-sm line-clamp-2">
-                  {post.data.description}
-                </p>
+                <div class="p-5">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class={`text-xs font-medium px-2 py-1 rounded ${style.bg} ${style.text}`}>
+                      {formatCategory(post.data.category)}
+                    </span>
+                    {post.data.contentType === 'pillar' && (
+                      <span class="text-xs font-medium px-2 py-1 rounded bg-forest-100 text-forest-800">
+                        Guide
+                      </span>
+                    )}
+                  </div>
+                  <h3 class="text-lg font-semibold text-stone-900 mb-2 group-hover:text-forest-700 transition-colors">
+                    {post.data.title}
+                  </h3>
+                  <p class="text-stone-600 text-sm line-clamp-2">
+                    {post.data.description}
+                  </p>
+                </div>
               </a>
             </article>
           );
